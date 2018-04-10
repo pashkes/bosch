@@ -1,0 +1,17 @@
+@import "mixins";
+
+$font-size-h1: 18px;
+$font-size-h2: 24px;
+$font-size--small: 13px;
+
+$screen-xs: 0 !default;
+$screen-sm: 480px !default;
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+$screen-xl: 1344px !default;
+$screen-xxl: 1800px !default;
+
+$transition: 0.25s;
+
+$primary: #383838;
+$secondary: #005691;
