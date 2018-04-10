@@ -93,13 +93,13 @@ gulp.task('sass', function () {
                 message: err.message
             };
         }))
-        .pipe(postcss([
+       /* .pipe(postcss([
           require('postcss-flexbugs-fixes'),
           require('postcss-inline-svg')
         ]))
 			  .pipe(gcmq())
         .pipe(autoprefixer({browsers: ['last 10 versions']}))
-        .pipe(debug({title: 'обработано less файлов'}))
+        .pipe(debug({title: 'обработано less файлов'}))*/
         .pipe(gulp.dest(PATH.BUILD.CSS))
         .pipe(browserSync.stream());
 });
@@ -201,7 +201,7 @@ gulp.task('clean', function() {
 # All task
 --------------------------------------------------------------*/
 gulp.task('build', gulp.series('clean',
-  gulp.parallel('pug', 'sass', 'jsLibs','js:libs', 'js', 'img', 'sprite:svg', 'fonts'))
+  gulp.parallel('pug', 'sass', 'jsLibs','js:libs', 'js', 'img', 'fonts'))
 );
 
 
@@ -216,7 +216,6 @@ gulp.task('serve', function () {
   gulp.watch(PATH.WATCH.PUG, gulp.series('pug'));
   gulp.watch(PATH.WATCH.SASS, gulp.series('sass'));
   gulp.watch(PATH.WATCH.JS, gulp.series('js'));
-  gulp.watch(PATH.WATCH.SVG, gulp.series('sprite:svg'));
 });
 
 /*--------------------------------------------------------------
