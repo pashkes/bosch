@@ -1,1 +1,149 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 45" version="1.1" x="0px" y="0px"><title>086.Measure</title><desc>Created with Sketch.</desc><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(1.000000, 1.000000)" stroke="#000000" stroke-width="2"><polygon points="0 34 58 34 58 22 0 22"/><path d="M0,17 L0,0"/><path d="M58,17 L58,0"/><path d="M56,9 L51,3"/><path d="M51,15 L56,9"/><path d="M51,3 L51,15"/><path d="M51,9 L7,9"/><path d="M7,2.9988 L7,14.9998"/><path d="M7,3 L2,9"/><path d="M7,15 L2,9"/><path d="M53.0016,22 L53.0006,25"/><path d="M47.0002,22 L47.0002,27"/><path d="M41.0002,25 L41.0002,22"/><path d="M35,22 L35,27"/><path d="M29,22 L29,25"/><path d="M23,22 L23,27"/><path d="M17.0002,22 L17.0002,25"/><path d="M11.0001,22 L11.0001,27"/><path d="M5.0001,22 L4.9991,25"/></g></g><text x="0" y="51" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Creaticca Creative Agency</text><text x="0" y="56" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15.875052mm"
+   height="9.5287685mm"
+   viewBox="0 0 15.875053 9.5287687"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="icon-universal.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="127.40028"
+     inkscape:cy="-100.50936"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g4573"
+     showgrid="false"
+     inkscape:snap-grids="false"
+     inkscape:snap-page="true"
+     inkscape:snap-center="false"
+     inkscape:snap-to-guides="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-23.898519,-36.949688)" stroke="b0b3ba">
+    <g
+       id="g4573"
+       transform="matrix(0.26458333,0,0,0.26458333,23.898545,36.953456)">
+      <g
+         id="g4536"
+         style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round">
+        <g
+           id="g4534"
+           transform="translate(1,1)"
+           style="stroke:#b0b3ba;stroke-width:2">
+          <polygon
+             id="polygon4496"
+             points="58,22 0,22 0,34 58,34 " />
+          <path
+             id="path4498"
+             d="M 0,17 V 0"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4500"
+             d="M 58,17 V 0"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4502"
+             d="M 56,9 51,3"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4504"
+             d="M 51,15 56,9"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4506"
+             d="M 51,3 V 15"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4508"
+             d="M 51,9 H 7"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4510"
+             d="m 7,2.9988 v 12.001"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4512"
+             d="M 7,3 2,9"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4514"
+             d="M 7,15 2,9"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4516"
+             d="m 53.0016,22 -0.001,3"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4518"
+             d="m 47.0002,22 v 5"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4520"
+             d="M 41.0002,25 V 22"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4522"
+             d="m 35,22 v 5"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4524"
+             d="m 29,22 v 3"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4526"
+             d="m 23,22 v 5"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4528"
+             d="m 17.0002,22 v 3"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4530"
+             d="m 11.0001,22 v 5"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path4532"
+             d="m 5.0001,22 -10e-4,3"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

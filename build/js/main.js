@@ -1,10 +1,98 @@
 
+(function () {
+	$('.js-demo-slider').slick({
+		arrows: false,
+		dots: true,
+		mobileFirst: true,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		}]
+	});
+})();
+$(function () {
+	$('.js-dilers-slider').slick({
+		mobileFirst: true,
+		dots: true,
+		arrows: false,
+		infinite: false,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+			{
+				breakpoint: 1344,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 4
+				}
+			}
+		]
+	});
+});
 
+// .features-nore scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .footer scripts goes here 
+
+/*$(function() {
+	
+});*/
+$(function() {
+	$('.js-in-complect-photos').slick({
+		fade: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 5000
+	});
+
+	$('.js-in-complect-main-slider').slick({
+		arrows: false,
+		adaptiveHeight: true
+	});
+});
+$(function() {
+	$('.js-performance-slider-mobile').slick({
+		dots: true,
+		slidesToShow: 2,
+		infinite: false,
+		arrows: false,
+		responsive: [{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+				dots: true,
+				infinite: false
+			}
+		}]
+	});
+});
 // .promo scripts goes here 
 
 /*$(function() {
 	
 });*/
+
+$(function() {
+	$('.js-reviews-slider').slick({
+		responsive: [{
+			breakpoint: 1343,
+			settings: {
+				arrows: false,
+				dots: true
+			}
+		}]
+	});
+});
 
 var advantageSlider = $('.js-advantage-slider');
 var advantageSliderSettigs = {

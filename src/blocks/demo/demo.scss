@@ -1,0 +1,17 @@
+// В этом файле должны быть стили для БЭМ-блока .demo , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.demo {
+	text-align: center;
+	padding-bottom: 33px;
+	border-bottom: 1px solid #c6c6c6;
+	&__img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	&__title {
+		max-width: 200px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

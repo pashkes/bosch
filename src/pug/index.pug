@@ -1,5 +1,12 @@
 include ../blocks/promo/promo
 include ../blocks/features/features
+include ../blocks/demo/demo
+include ../blocks/performance/performance
+include ../blocks/features-more/features-more
+include ../blocks/in-complect/in-complect
+include ../blocks/reviews/reviews
+include ../blocks/dilers/dilers
+include ../blocks/footer/footer
 
 doctype html
 html(lang="ru")
@@ -16,6 +23,13 @@ html(lang="ru")
   body
     +promo
     +features
+    +demo
+    +performance
+    +features-more
+    +in-complect
+    +reviews
+    +dilers
+    +footer
 
     block js_libs
       script(src="js/libs.js")

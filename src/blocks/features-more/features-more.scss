@@ -1,0 +1,38 @@
+// В этом файле должны быть стили для БЭМ-блока .features-nore , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.features-more {
+	position:relative;
+	padding-top: 40px;
+	overflow: hidden;
+	&__bg-image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		img {
+			object-position: 30% 50%;
+			object-fit: cover;
+			height: 705px;
+			width: 100%;
+		}
+	}
+	&__item {
+		margin-bottom: 30px;
+		max-width: 200px;
+	}
+	&__icon {
+		display: block;
+		margin-bottom: 3px;
+	}
+	&__title {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 38px;
+		letter-spacing: -0.3px;
+	}
+	&__description {
+		line-height: 1.428;
+	}
+}

@@ -1,5 +1,4 @@
 .promo {
-	position: relative;
 	padding-top: 16px;
 	&::before {
 		content: '';
@@ -11,15 +10,7 @@
 		background: url(../../img/crop-gradient.png) left center no-repeat;
 		background-size: 100% 16px;
 	}
-	&::after {
-		content: '';
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		top: 16px;
-		left: 0;
-		background: url(../../img/noise_pattern.png) 0 0 repeat;
-	}
+
 	&__header {
 		margin-bottom: 20px;
 	}
@@ -32,11 +23,15 @@
 		background-image: -ms-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%)
 	}
 	&__hand  {
-		margin-top: -100px;
+		margin-top: -160px;
+
 		img {
 			object-fit: cover;
-			min-height: 328px;
+			min-height: 390px;
 			object-position: 20% 0;
+			@media (min-width: $screen-sm) {
+				object-position: 0 0;
+			}
 		}
 	}
 	&__logo {
@@ -48,7 +43,7 @@
 		max-width: 180px;
 		margin-right: auto;
 		margin-left: auto;
-
+		text-align: center;
 	}
 	&__logo,
 	&__title,
@@ -57,5 +52,10 @@
 		position: relative;
 		z-index: 1;
 	}
-
+	&__btn {
+		margin-top: -7px;
+		@media (min-width: $screen-md) {
+			margin-top: 0;
+		}
+	}
 }

@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока .in-complect , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.in-complect {
+	padding-top: 27px;
+	padding-bottom: 40px;
+
+	&__main-slider {
+		position: relative;
+		z-index: 1;
+		font-size: 0;
+	}
+	&__photos {
+		margin-bottom: 15px;
+	}
+	&__title {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	&__item {
+		position: relative;
+		margin-bottom: 12px;
+		padding-left: 24px;
+		font-size: 14px;
+		line-height: 1.363;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			bottom: 4px;
+			left: 0;
+			background-color: #005691;
+		}
+	}
+}

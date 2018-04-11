@@ -1,0 +1,27 @@
+// В этом файле должны быть стили для БЭМ-блока .price-list , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.dilers {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	&__title {
+		text-align: center;
+	}
+	&__card {
+		padding: 20px 24px 24px;
+		border: 1px solid #e8e8e8;
+	}
+	&__name {
+		display: block;
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: -0.48px;
+	}
+	&__price {
+		display: block;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 22px;
+		letter-spacing: -0.6px;
+	}
+}
