@@ -4,29 +4,20 @@
 
 .btn {
 	display: inline-block;
-	padding: 13px 32px 11px 32px;
+	padding: 10px 32px 14px 32px;
 	width: 100%;
-	border: none;
+	border: 1px solid #ffffff;
 	vertical-align: top;
 	text-decoration: none;
-	text-transform: uppercase;
-	border-radius: 20px;
-	font-family: "Intro", sans-serif;
-	background-color: #d52833;
+	background-color: transparent;
 	color: #FFFFFF;
-	line-height: 1.5;
 	text-align: center;
-	font-size: 11px;
-	letter-spacing: 0.8px;
 	transition: .3s ease-in;
 	cursor: pointer;
 	&:hover {
-		background-color: #b82730;
+		background-color: #005691;
 	}
 	&:active {
-		background-color: darken(#b82730, 5%);
 	}
-	@media (min-width: $screen-md) {
-		max-width: 240px;
-	}
+
 }

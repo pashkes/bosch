@@ -6,14 +6,21 @@ body {
 	color: $primary;
 	min-width: 320px;
 }
-
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 h1, h2 {
 	margin-top: 0;
 	text-align: center;
+	@media (min-width: $screen-md) {
+		text-align: center;
+	}
 }
 
 h1 {
-	font: $font-size-h1;
+	font-size: $font-size-h1;
 	line-height: 1.333;
 	color: #fff;
 	font-weight: 300;
@@ -25,8 +32,15 @@ h2 {
 	line-height: 1.25;
 	letter-spacing: -0.36px;
 	font-weight: 300;
+
 }
 
+h3 {
+	margin-top: 0;
+	font-weight: 400;
+	line-height: 2.3;
+	letter-spacing: -0.3px;
+}
 ul {
 	margin-left: 0;
 	padding-left: 0;
@@ -36,6 +50,7 @@ ul {
 img {
 	max-width: 100%;
 	height: auto;
+	vertical-align: middle;
 }
 
 svg {
@@ -100,4 +115,8 @@ p {
 
 .fade-box img.lazyloaded {
 	opacity: 1;
+}
+.container {
+	padding-right: 24px;
+	padding-left: 24px;
 }

@@ -1,3 +1,6 @@
+include ../blocks/promo/promo
+include ../blocks/features/features
+
 doctype html
 html(lang="ru")
   head
@@ -11,11 +14,8 @@ html(lang="ru")
       link(rel="stylesheet" href="css/style.css")
 
   body
-    .container
-      .row
-        .col lorem
-        .col lorem
-        .col lorem
+    +promo
+    +features
 
     block js_libs
       script(src="js/libs.js")

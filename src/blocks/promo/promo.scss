@@ -1,0 +1,61 @@
+.promo {
+	position: relative;
+	padding-top: 16px;
+	&::before {
+		content: '';
+		position: absolute;
+		height: 16px;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: url(../../img/crop-gradient.png) left center no-repeat;
+		background-size: 100% 16px;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top: 16px;
+		left: 0;
+		background: url(../../img/noise_pattern.png) 0 0 repeat;
+	}
+	&__header {
+		margin-bottom: 20px;
+	}
+	&__head {
+		position:relative;
+		padding-bottom: 24px;
+		text-align: center;
+		background-image: -moz-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
+		background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
+		background-image: -ms-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%)
+	}
+	&__hand  {
+		margin-top: -100px;
+		img {
+			object-fit: cover;
+			min-height: 328px;
+			object-position: 20% 0;
+		}
+	}
+	&__logo {
+		max-width: 96px;
+		padding: 8px 6px 11px 11px;
+		background-color: #fff;
+	}
+	&__title {
+		max-width: 180px;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+	&__logo,
+	&__title,
+	&__hand,
+	&__btn {
+		position: relative;
+		z-index: 1;
+	}
+
+}
