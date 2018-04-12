@@ -2,5 +2,110 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
 
 .footer {
-	
+	position: relative;
+	padding-top: 39px;
+	padding-bottom: 6px;
+	text-align: center;
+	@media (min-width: $screen-md) {
+		padding-top: 40px;
+		text-align: left;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 51px;
+		padding-bottom: 33px;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		height: 16px;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: url(../../img/crop-gradient.png) left center no-repeat;
+		background-size: 100% 16px;
+	}
+	&__logo {
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 12px;
+		@media (min-width: $screen-md) {
+			padding-top: 15px;
+			margin-bottom: 11px;
+		}
+		@media(min-width: $screen-xl) {
+			padding-top: 0;
+			margin-bottom: 0;
+		}
+	}
+	&__copy {
+		color: #898989;
+		font-size: 13px;
+		line-height: 22px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.social {
+	display: inline-flex;
+	margin-bottom: 18px;
+	margin-right: -8px;
+	margin-left: -8px;
+	flex-wrap: wrap;
+	@media (min-width: $screen-md) {
+		margin-top: -12px;
+	}
+	@media(min-width: $screen-xl) {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	&__item {
+		margin-right: 8px;
+		margin-left: 8px;
+	}
+	&__link {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		border: 1px solid #005691;
+		transition: .2s easy-in;
+		&--facebook {
+			svg {
+				width: 29px;
+				height: 23px;
+			}
+		}
+		&--youtube {
+			svg {
+				width: 21px;
+				height: 32px;
+			}
+		}
+		&--twitter {
+			svg {
+				width: 24px;
+				height: 24px;
+			}
+		}
+		&--bosch {
+			background: transparent url(../img/icon/h-icon.png) center no-repeat;
+			&:hover {
+				background-image: url(../img/icon/h-icon-hover.png);
+			}
+		}
+		svg {
+			fill: #005691;
+			transition: .2s easy-in;
+		}
+		&:hover {
+			background-color: #005691;
+			svg {
+				fill: #fff;
+			}
+		}
+	}
 }

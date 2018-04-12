@@ -4,32 +4,127 @@
 .reviews {
 	padding-top: 35px;
 	padding-bottom: 35px;
-&__slider {
-
-}
+	@media (min-width: $screen-md) {
+		padding-bottom: 43px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 79px;
+		padding-bottom: 66px;
+	}
+	&__title {
+		margin-bottom: 17px;
+		text-align: center;
+		@media (min-width: $screen-md) {
+			margin-bottom: 24px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 88px;
+			letter-spacing: -0.69px;
+		}
+	}
+	&__arrow {
+		display: none;
+		@media(min-width: $screen-xl) {
+			display: block;
+		}
+	}
+	&__slider {
+		position: relative;
+		@media (min-width: $screen-md) {
+			padding-right: 16px;
+			padding-left: 16px;
+		}
+		@media(min-width: $screen-xl) {
+			padding: 0;
+		}
+	}
 	&__name,
 	&__read-more {
 		color: #005691;
 	}
+	&__text {
+		p {
+			@media (min-width: $screen-md) {
+				line-height: 24px;
+			}
+		}
+	}
 	&__name {
-		margin-bottom: 18px;
+		display: block;
+		margin-bottom: 16px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 14px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 34px;
+		}
 	}
 	&__desc {
 		display: block;
+		margin-bottom: 9px;
 		font-size: 20px;
 		font-weight: 300;
 		line-height: 24px;
 		letter-spacing: -0.3px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 11px;
+			font-size: 28px;
+			line-height: 1.357;
+			letter-spacing: -0.42px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-top: -10px;
+			max-width: 350px;
+			margin-bottom: 19px;
+		}
 	}
 	&__video {
-		margin-bottom: 20px;
+		margin-bottom: 18px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 25px;
+		}
 	}
 	&__read-more {
+		position: relative;
+		padding-left: 25px;
+		padding-right: 25px;
+		display: inline-flex;
+		align-items: center;
 		border: none;
 		background-color: transparent;
 		font-size: 14px;
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+		}
+		@media (min-width: $screen-md) {
+			margin-left: 7px;
+		}
+		svg {
+			position: absolute;
+			left: 0;
+			top: 3px;
+			width: 17px;
+			height: 18px;
+			margin-right: 10px;
+			fill: #005691;
+			transition: .2s ease-in;
+		}
+		&:hover {
+			svg {
+				fill: #005691;
+			}
+		}
+		&:focus {
+			outline: none;
+		}
 	}
 	.slider-dots {
 		padding-top: 18px;
+	}
+	.slick-dots {
+		@media (min-width: $screen-md) {
+			padding-top: 7px;
+		}
 	}
 }

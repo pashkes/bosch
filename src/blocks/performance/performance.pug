@@ -1,6 +1,6 @@
 mixin performance()
 	section.performance.noise-gradient
-		.container
+		.container.z-index
 			h2.performance__title Включение при нажатии, отличный результат!
 			p.performance__subtitle
 				| Bosch GO — первая в мире смарт-отвертка с технологией Push & Go. Для старта работы достаточно
@@ -34,33 +34,36 @@ mixin performance()
 							li.performance__definitions.performance__definitions--right
 								span Micro-USB разъем для зарядки аккумулятора
 			h2.performance__title-tech Технические характеристики
-			.row
-				.col-md-6
-					.performance__row
-						span.performance__name Класс инструмента
-						strong.performance__value Профессиональный
-					.performance__row
-						span.performance__name Максимальный крутящий момент
-						strong.performance__value 5/2,5 Нм
-					.performance__row
-						span.performance__name Число оборотов холостого хода
-						strong.performance__value 360 об./мин
-					.performance__row
-						span.performance__name Максимальный диаметр шурупов
-						strong.performance__value 5 мм
-				.col-md-6
-					.performance__row
-						span.performance__name Тип аккумулятора
-						strong.performance__value Li
-					.performance__row
-						span.performance__name Напряжение аккумулятора
-						strong.performance__value 3,6 В
-					.performance__row
-						span.performance__name Время зарядки
-						strong.performance__value 90 минут
-					.performance__row.performance__row--last
-						span.performance__name Вес
-						strong.performance__value 0,28 кг
+			.performance__tech-inner
+				.row.justify-content-xl-between
+					.col-md-6.col-xl-auto
+						.performance__row
+							span.performance__name Класс инструмента
+							strong.performance__value Профессиональный
+						.performance__row
+							span.performance__name Максимальный крутящий момент
+							strong.performance__value 5/2,5 Нм
+						.performance__row
+							span.performance__name Число оборотов
+								span холостого хода
+							strong.performance__value 360 об./мин
+						.performance__row.performance__row--last-md
+							span.performance__name Максимальный диаметр шурупов
+							strong.performance__value 5 мм
+					.col-md-6.col-xl-auto
+						.performance__row
+							span.performance__name Тип аккумулятора
+							strong.performance__value Li
+						.performance__row
+							span.performance__name Напряжение
+								span аккумулятора
+							strong.performance__value 3,6 В
+						.performance__row
+							span.performance__name Время зарядки
+							strong.performance__value 90 минут
+						.performance__row.performance__row--last
+							span.performance__name Вес
+							strong.performance__value 0,28 кг
 
 
 

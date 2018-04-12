@@ -1,18 +1,45 @@
 .performance {
 	padding-top: 31px;
 	padding-bottom: 30px;
-
+	@media (min-width: $screen-md) {
+		padding-bottom: 17px;
+	}
 	&__title {
 		margin-bottom: 22px;
 		text-align: center;
+		@media (min-width: $screen-md) {
+			max-width: 430px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		@media(min-width: $screen-xl) {
+			max-width: 100%;
+		}
+
 	}
 	&__title-tech {
 		text-align: center;
 		margin-bottom: 30px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 23px;
+			font-size: 28px;
+			line-height: 1.642;
+			letter-spacing: -0.42px;
+		}
 	}
 	&__subtitle {
 		margin-bottom: 24px;
 		text-align: center;
+		@media (min-width: $screen-md) {
+			margin-bottom: 55px;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		@media(min-width: $screen-xl) {
+			max-width: 785px;
+			margin-right: auto;
+			margin-left: auto;
+		}
 	}
 	&__demo {
 		position: relative;
@@ -47,6 +74,12 @@
 		position: absolute;
 		top: 0;
 		height: 806px;
+		@media (min-width: $screen-md) {
+			//height: 708px;
+			//img {
+			//	height: 708px;
+			//}
+		}
 		&--right {
 			right: 0;
 			width: 80px;
@@ -200,19 +233,51 @@
 	.slick-dots {
 		padding-top: 25px;
 	}
+	&__tech-inner {
+		@media(min-width: $screen-xl) {
+			padding-right: 52px;
+			padding-left: 52px;
+		}
+	}
 	&__row {
-		position:relative;
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 		padding-top: 9px;
 		padding-bottom: 11px;
 		border-bottom: 1px solid #c6c6c6;
 		z-index: 1;
+		@media (min-width: $screen-md) {
+			align-items: center;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			min-height: 63px;
+		}
+		@media(min-width: $screen-xl) {
+			width: 481px;
+		    min-height: 56px;
+		}
 		&--last {
+			border-bottom: none;
+		}
+
+		&--last-md {
 			border-bottom: none;
 		}
 	}
 	&__name {
 		max-width: 125px;
+		span {
+			display: block;
+			@media(min-width: $screen-xl) {
+				display: inline;
+			}
+		}
+		@media (min-width: $screen-md) {
+			max-width: 230px;
+		}
+		@media(min-width: $screen-xl) {
+		    max-width: 100%;
+		}
 	}
 }

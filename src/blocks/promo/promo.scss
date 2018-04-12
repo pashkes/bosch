@@ -1,5 +1,20 @@
 .promo {
+	position: relative;
+	padding-bottom: 24px;
+	text-align: center;
 	padding-top: 16px;
+	background-image: -moz-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
+	background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
+	background-image: -ms-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
+	@media (min-width: $screen-md) {
+		padding-bottom: 111px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-bottom: 71px;
+	}
+	&::after {
+		top: 16px;
+	}
 	&::before {
 		content: '';
 		position: absolute;
@@ -10,41 +25,6 @@
 		background: url(../../img/crop-gradient.png) left center no-repeat;
 		background-size: 100% 16px;
 	}
-
-	&__header {
-		margin-bottom: 20px;
-	}
-	&__head {
-		position:relative;
-		padding-bottom: 24px;
-		text-align: center;
-		background-image: -moz-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
-		background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
-		background-image: -ms-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%)
-	}
-	&__hand  {
-		margin-top: -160px;
-
-		img {
-			object-fit: cover;
-			min-height: 390px;
-			object-position: 20% 0;
-			@media (min-width: $screen-sm) {
-				object-position: 0 0;
-			}
-		}
-	}
-	&__logo {
-		max-width: 96px;
-		padding: 8px 6px 11px 11px;
-		background-color: #fff;
-	}
-	&__title {
-		max-width: 180px;
-		margin-right: auto;
-		margin-left: auto;
-		text-align: center;
-	}
 	&__logo,
 	&__title,
 	&__hand,
@@ -52,10 +32,104 @@
 		position: relative;
 		z-index: 1;
 	}
+	&__header {
+		transition: .2s ease;
+		.yandex-btn {
+			opacity: 0;
+			visibility: hidden;
+			transition: .2s ease;
+
+		}
+		&.sticky {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			background-color: #ffffff;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			z-index: 10;
+			.yandex-btn {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	&__logo {
+		max-width: 96px;
+		padding: 8px 6px 11px 11px;
+		background-color: #fff;
+		@media (min-width: $screen-md) {
+			max-width: 193px;
+			padding: 18px 11px 19px 23px;
+		}
+		@media(min-width: $screen-xl) {
+			max-width: 205px;
+			padding: 19px 12px 21px 23px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	&__hand {
+		margin-top: -160px;
+		@media (min-width: $screen-md) {
+			margin-top: -200px;
+			margin-bottom: 34px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-top: -178px;
+		}
+		img {
+			object-fit: cover;
+			min-height: 390px;
+			object-position: 20% 0;
+			@media (min-width: $screen-sm) {
+				object-position: 0 0;
+			}
+			@media (min-width: $screen-md) {
+				object-position: 15% 0;
+				min-height: 655px;
+			}
+			@media(min-width: $screen-xl) {
+				min-height: 580px;
+				object-position: -7% 0;
+
+			}
+		}
+	}
+	&__title {
+		max-width: 180px;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		z-index: 2;
+		@media (min-width: $screen-md) {
+			max-width: 100%;
+			margin-top: -25px;
+		}
+	}
+
+	&__psevdo-logo {
+		z-index: 2;
+		padding-top: 20px;
+		@media (min-width: $screen-md) {
+			padding-top: 43px;
+			max-width: 454px;
+			width: 100%;
+		}
+		@media(min-width: $screen-xl) {
+			margin-top: -62px;
+			padding-top: 0;
+		}
+	}
 	&__btn {
 		margin-top: -7px;
 		@media (min-width: $screen-md) {
 			margin-top: 0;
+			max-width: 272px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-top: -24px;
 		}
 	}
 }

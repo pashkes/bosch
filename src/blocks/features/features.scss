@@ -1,9 +1,28 @@
 .features {
 	padding-top: 30px;
 	overflow: hidden;
-	&__inner  {
+	@media (min-width: $screen-md) {
+		padding-top: 36px;
+		padding-bottom: 69px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 137px;
+		padding-bottom: 162px;
+	}
+	&__content {
+		position: relative;
+		z-index: 1;
+		@media(min-width: $screen-xl) {
+			padding-right: 68px;
+			padding-left: 68px;
+		}
+	}
+	&__inner {
 		display: flex;
 		min-height: 459px;
+		@media (min-width: $screen-md) {
+			min-height: 100%;
+		}
 	}
 	&__img-inner {
 		position: absolute;
@@ -11,9 +30,39 @@
 		right: 0;
 		bottom: 0;
 		left: -40px;
+		@media (min-width: $screen-md) {
+			top: -307px;
+			right: 12px;
+			left: 0;
+		}
+		@media(min-width: $screen-xl) {
+			top: -429px;
+			right: 34px;
+		}
 	}
 	&__title {
 		margin-bottom: 24px;
+		@media (min-width: $screen-md) {
+			max-width: 418px;
+		}
+		@media(min-width: $screen-xl) {
+			max-width: 530px;
+			margin-bottom: 40px;
+		}
+	}
+	&__subtitle {
+		margin-bottom: 38px;
+		@media (min-width: $screen-md) {
+			max-width: 495px;
+			margin-bottom: 56px;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 74px;
+			line-height: 1.75;
+			max-width: 644px;
+		}
 	}
 	&__vertical-img {
 		img {
@@ -22,20 +71,36 @@
 			right: -56px;
 			bottom: 0;
 			z-index: 1;
+			@media (min-width: $screen-md) {
+				right: 0;
+				width: 146px;
+			}
+			@media(min-width: $screen-xl) {
+			    width: 198px;
+			}
 		}
-	}
-	&__subtitle {
-		margin-bottom: 38px;
 	}
 	&__subject {
 		margin-bottom: 0;
 		line-height: 2.3;
+		@media (min-width: $screen-md) {
+			margin-bottom: 13px;
+			font-size: 28px;
+			line-height: 1.642;
+			letter-spacing: -0.42px;
+		}
 	}
 	&__description {
-		line-height: 1.428;
+		line-height: 22px;
 		margin-bottom: 0;
+		@media(min-width: $screen-xl) {
+		    max-width: 162px;
+		}
 	}
 	&__item {
 		margin-bottom: 22px;
+	}
+	.slick-dots {
+
 	}
 }

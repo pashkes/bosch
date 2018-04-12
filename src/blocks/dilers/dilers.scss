@@ -2,26 +2,76 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
 
 .dilers {
-	padding-top: 35px;
+	padding-top: 31px;
 	padding-bottom: 35px;
+	@media (min-width: $screen-md) {
+		padding-top: 37px;
+		padding-bottom: 43px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 80px;
+		padding-bottom: 95px;
+	}
 	&__title {
+		margin-bottom: 23px;
 		text-align: center;
+		@media (min-width: $screen-md) {
+			margin-bottom: 41px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 53px;
+		}
+		span {
+			@media (min-width: $screen-md) {
+				display: block;
+			}
+		}
+	}
+	&__slider {
+		@media (min-width: $screen-md) {
+			position:relative;
+			border-left: 1px solid #e8e8e8;
+			&::before {
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				width: 1px;
+				background-color: #e8e8e8;
+			}
+		}
 	}
 	&__card {
-		padding: 20px 24px 24px;
+		padding: 13px 24px 24px;
 		border: 1px solid #e8e8e8;
+		@media (min-width: $screen-md) {
+			padding: 20px 31px 32px;
+			border-left: none;
+		}
 	}
 	&__name {
 		display: block;
+		margin-bottom: 3px;
 		font-size: 16px;
 		line-height: 22px;
 		letter-spacing: -0.48px;
 	}
 	&__price {
 		display: block;
+		margin-bottom: 19px;
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 22px;
 		letter-spacing: -0.6px;
+	}
+	&__more {
+		font-size: 16px;
+		padding: 7px 32px 10px 32px;
+	}
+	.slick-dots {
+		@media (min-width: $screen-md) {
+			padding-top: 26px;
+		}
 	}
 }

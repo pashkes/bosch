@@ -5,6 +5,14 @@
 	position:relative;
 	padding-top: 40px;
 	overflow: hidden;
+	@media (min-width: $screen-md) {
+		padding-top: 84px;
+		padding-bottom: 39px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 173px;
+		padding-bottom: 130px;
+	}
 	&__bg-image {
 		position: absolute;
 		top: 0;
@@ -16,21 +24,68 @@
 			object-fit: cover;
 			height: 705px;
 			width: 100%;
+			@media (min-width: $screen-md) {
+				object-position: 10% 0;
+				object-fit: cover;
+				height: 1175px;
+				position: absolute;
+				top: -282px;
+			}
+			@media(min-width: $screen-xl) {
+				object-position: -5% -6%;
+				height: 1499px;
+				top: -339px;			}
+		}
+	}
+	&__list {
+		@media (min-width: $screen-md) {
+			padding-left: 19px;
 		}
 	}
 	&__item {
 		margin-bottom: 30px;
 		max-width: 200px;
+		@media (min-width: $screen-md) {
+			display: flex;
+			align-items: center;
+			max-width: 380px;
+			margin-bottom: 45px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 48px;
+		}
 	}
-	&__icon {
+	&__img {
 		display: block;
 		margin-bottom: 3px;
+		@media (min-width: $screen-md) {
+			max-width: 77px;
+			width: 100%;
+			margin-bottom: 0;
+			margin-right: 23px;
+		}
+		@media(min-width: $screen-xl) {
+			max-width: 149px;
+			padding-left: 42px;
+		}
 	}
 	&__title {
 		font-size: 20px;
 		font-weight: 300;
 		line-height: 38px;
 		letter-spacing: -0.3px;
+		@media (min-width: $screen-md) {
+			display: block;
+			margin-bottom: 9px;
+			font-size: 28px;
+			line-height: 1.642;
+			letter-spacing: -0.42px;
+		}
+		@media(min-width: $screen-xl) {
+			font-size: 28px;
+			line-height: 1.642;
+			letter-spacing: -0.42px;
+		}
 	}
 	&__description {
 		line-height: 1.428;

@@ -3,8 +3,14 @@
 
 .in-complect {
 	padding-top: 27px;
-	padding-bottom: 40px;
-
+	padding-bottom: 23px;
+	@media (min-width: $screen-md) {
+		padding-top: 33px;
+		padding-bottom: 0;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 72px;
+	}
 	&__main-slider {
 		position: relative;
 		z-index: 1;
@@ -16,10 +22,26 @@
 	&__title {
 		margin-bottom: 30px;
 		text-align: center;
+		@media (min-width: $screen-md) {
+			margin-bottom: 41px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 92px;
+		}
+	}
+	&__has {
+		@media (min-width: $screen-md) {
+			padding-top: 51px;
+			padding-left: 18px;
+		}
+		@media(min-width: $screen-xl) {
+			padding-top: 183px;
+			margin-left: -43px;
+		}
 	}
 	&__item {
 		position: relative;
-		margin-bottom: 12px;
+		margin-bottom: 13px;
 		padding-left: 24px;
 		font-size: 14px;
 		line-height: 1.363;

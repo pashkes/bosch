@@ -1,0 +1,43 @@
+// В этом файле должны быть стили для БЭМ-блока .about-company , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.about-company {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ebebeb;
+	@media (min-width: $screen-md) {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 71px;
+		padding-bottom: 95px;
+	}
+	&__title {
+		margin-bottom: 20px;
+		text-align: center;
+		@media (min-width: $screen-md) {
+			margin-bottom: 30px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 94px;
+		}
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-right: -16px;
+		margin-left: -16px;
+		list-style-type: none;
+		overflow-x: auto;
+	}
+	&__item {
+		padding-right: 16px;
+		padding-left: 16px;
+		flex: none;
+	}
+	&__link {
+		display: block;
+	}
+}

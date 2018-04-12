@@ -12,10 +12,11 @@
 	background-color: transparent;
 	color: #FFFFFF;
 	text-align: center;
-	transition: .3s ease-in;
+	transition: .2s ease-in;
 	cursor: pointer;
 	&:hover {
 		background-color: #005691;
+		text-decoration: none;
 	}
 	&:active {
 	}

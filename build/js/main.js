@@ -1,3 +1,8 @@
+// .about-company scripts goes here 
+
+/*$(function() {
+	
+});*/
 
 (function () {
 	$('.js-demo-slider').slick({
@@ -10,7 +15,15 @@
 				slidesToShow: 2,
 				slidesToScroll: 2
 			}
-		}]
+		},
+			{
+				breakpoint: 1343,
+				settings: {
+					rows: 2,
+					slidesToShow: 2,
+					dots: false
+				}
+			}]
 	});
 })();
 $(function () {
@@ -19,15 +32,16 @@ $(function () {
 		dots: true,
 		arrows: false,
 		infinite: false,
+		appendDots: $('.dilers__dots'),
 		responsive: [{
-			breakpoint: 768,
+			breakpoint: 767,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2
 			}
 		},
 			{
-				breakpoint: 1344,
+				breakpoint: 1343,
 				settings: {
 					slidesToShow: 4,
 					slidesToScroll: 4
@@ -47,7 +61,7 @@ $(function () {
 /*$(function() {
 	
 });*/
-$(function() {
+$(function () {
 	$('.js-in-complect-photos').slick({
 		fade: true,
 		arrows: false,
@@ -57,7 +71,12 @@ $(function() {
 
 	$('.js-in-complect-main-slider').slick({
 		arrows: false,
-		adaptiveHeight: true
+		responsive: [{
+			breakpoint: 1343,
+			settings: {
+				adaptiveHeight: true
+			}
+		}]
 	});
 });
 $(function() {
@@ -84,6 +103,8 @@ $(function() {
 
 $(function() {
 	$('.js-reviews-slider').slick({
+		prevArrow: $('.js-slider-arrow-prev'),
+		nextArrow: $('.js-slider-arrow-next'),
 		responsive: [{
 			breakpoint: 1343,
 			settings: {
@@ -93,45 +114,18 @@ $(function() {
 		}]
 	});
 });
-
-var advantageSlider = $('.js-advantage-slider');
-var advantageSliderSettigs = {
-	dots: true,
-	arrows: false,
-	centerPAdding: '0',
-	adaptiveHeight: true,
-};
-
+var header = $('.promo__header');
+var headerHeight;
 $(window).on('load resize', function () {
-	// slickMobile(advantageSlider, advantageSliderSettigs);
+	headerHeight = header.height() + 16;
 });
-
-// включение слайдера на мобильном
-function slickMobile (slider, settings) {
-	if ($(window).width() > 767) {
-		if (slider.hasClass('slick-initialized')) {
-			slider.slick('unslick');
-		}
-		return
+$(window).scroll(function(){
+	if ($(window).scrollTop() >= 16) {
+		$('.promo__header').addClass('sticky');
+		$('body').css('margin-top', headerHeight);
 	}
-	if (!slider.hasClass('slick-initialized')) {
-		return slider.slick(settings);
+	else {
+		$('.promo__header').removeClass('sticky');
+		$('body').css('margin-top', 0);
 	}
-}
-
-$(function() {
-	// This will select everything with the class smoothScroll
-	// This should prevent problems with carousel, scrollspy, etc...
-	$('.js-go-order').click(function() {
-		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				$('html,body').animate({
-					scrollTop: target.offset().top
-				}, 1000); // The number here represents the speed of the scroll in milliseconds
-				return false;
-			}
-		}
-	});
 });

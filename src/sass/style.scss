@@ -8,10 +8,10 @@
 @import "libs/slick";
 
 //base style
+@import "../blocks/btn/btn";
 @import "_base";
 
 // blocks
-@import "../blocks/btn/btn";
 @import "../blocks/promo/promo";
 @import "../blocks/features/features";
 @import "../blocks/demo/demo";
@@ -21,3 +21,4 @@
 @import "../blocks/reviews/reviews";
 @import "../blocks/dilers/dilers";
 @import "../blocks/footer/footer";
+@import "../blocks/about-company/about-company";

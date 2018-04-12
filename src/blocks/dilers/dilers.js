@@ -4,15 +4,16 @@ $(function () {
 		dots: true,
 		arrows: false,
 		infinite: false,
+		appendDots: $('.dilers__dots'),
 		responsive: [{
-			breakpoint: 768,
+			breakpoint: 767,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2
 			}
 		},
 			{
-				breakpoint: 1344,
+				breakpoint: 1343,
 				settings: {
 					slidesToShow: 4,
 					slidesToScroll: 4
