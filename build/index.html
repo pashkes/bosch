@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="promo noise-gradient">
-      <header class="promo__header">
+      <header class="promo__header js-sticky-header">
         <div class="container">
           <div class="row justify-content-between align-items-center">
             <div class="col-auto">
@@ -30,7 +30,7 @@
         <picture><img src="img/hand.png"/></picture>
       </div>
       <div class="container">
-        <button class="promo__btn btn" type="button">Смотреть промо-ролик</button>
+        <button class="promo__btn btn" type="button" data-toggle="modal" data-target="#promo-video">Смотреть промо-ролик</button>
       </div>
     </div>
     <section class="features noise-gradient">
@@ -71,7 +71,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 col-xl-4">
+            <div class="col-4 col-sm-3 col-xl-4">
               <div class="features__vertical-img">
                 <div class="features__img-inner"><img src="img/vertical.png"/></div>
               </div>
@@ -323,6 +323,22 @@
           </div>
           <div class="col-12 col-md-6 col-xl-auto order-md-1"><img class="footer__logo" src="img/logo-lg.png"/>
             <p class="footer__copy">&#169;2017 Роберт Бош OOO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="promo-video">
+      <div class="modal" id="promo-video" tabindex="-1" role="dialog" aria-labelledby="promo-video" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="promo-video__header">
+              <button class="promo-video__close" type="button" data-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.512 224.512"><path d="M224.507 6.997L217.521 0 112.256 105.258 6.998 0 .005 6.997l105.258 105.257L.005 217.512l6.993 7L112.256 119.24l105.265 105.272 6.986-7-105.258-105.258z"/></svg></button>
+            </div>
+            <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/XjAzX8ddkLY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>

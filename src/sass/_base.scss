@@ -238,7 +238,7 @@ p {
 	position: relative;
 	width: 100%;
 	margin-bottom: 23px;
-	padding: 12px 32px 15px 56px;
+	padding: 13px 32px 14px 56px;
 	@media (min-width: $screen-md) {
 		width: 297px;
 		margin-bottom: 0;
@@ -259,4 +259,10 @@ p {
 			background-image: url(../img/icon/cart-icon-hover.png);
 		}
 	}
+}
+.modal-backdrop{
+	background-color: rgba(#0a1926, .9);
+}
+.modal-backdrop.show {
+	opacity: .6;
 }

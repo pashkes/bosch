@@ -1,0 +1,12 @@
+mixin promo-video()
+	.promo-video
+		#promo-video.modal(tabindex='-1', role='dialog', aria-labelledby='promo-video', aria-hidden='true')
+			.modal-dialog.modal-dialog-centered(role='document')
+				.modal-content
+					.promo-video__header
+						button.promo-video__close(type='button', data-dismiss='modal', aria-label='Close')
+							| <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.512 224.512"><path d="M224.507 6.997L217.521 0 112.256 105.258 6.998 0 .005 6.997l105.258 105.257L.005 217.512l6.993 7L112.256 119.24l105.265 105.272 6.986-7-105.258-105.258z"/></svg>
+					.modal-body
+						.embed-responsive.embed-responsive-16by9
+							iframe( class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/XjAzX8ddkLY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+

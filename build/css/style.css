@@ -2646,7 +2646,7 @@ html {
 
 .btn {
   display: inline-block;
-  padding: 10px 32px 14px 32px;
+  padding: 12px 32px 12px 32px;
   width: 100%;
   border: 1px solid #ffffff;
   vertical-align: top;
@@ -2866,7 +2866,7 @@ p {
   position: relative;
   width: 100%;
   margin-bottom: 23px;
-  padding: 12px 32px 15px 56px; }
+  padding: 13px 32px 14px 56px; }
   @media (min-width: 768px) {
     .yandex-btn {
       width: 297px;
@@ -2883,6 +2883,12 @@ p {
     transition: .2s ease-in; }
   .yandex-btn:hover::before {
     background-image: url(../img/icon/cart-icon-hover.png); }
+
+.modal-backdrop {
+  background-color: rgba(10, 25, 38, 0.9); }
+
+.modal-backdrop.show {
+  opacity: .6; }
 
 .promo {
   position: relative;
@@ -2915,10 +2921,22 @@ p {
   .promo__header {
     transition: .2s ease; }
     .promo__header .yandex-btn {
+      padding: 15px 32px 15px 56px;
+      margin-bottom: 0;
+      font-size: 0;
       opacity: 0;
       visibility: hidden;
       transition: .2s ease; }
-    .promo__header.sticky {
+      .promo__header .yandex-btn::before {
+        left: 50%; }
+        @media (min-width: 768px) {
+          .promo__header .yandex-btn::before {
+            left: 36px; } }
+      @media (min-width: 768px) {
+        .promo__header .yandex-btn {
+          font-size: 16px;
+          padding: 13px 32px 14px 56px; } }
+    .promo__header.show {
       position: fixed;
       top: 0;
       right: 0;
@@ -2926,7 +2944,7 @@ p {
       background-color: #ffffff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       z-index: 10; }
-      .promo__header.sticky .yandex-btn {
+      .promo__header.show .yandex-btn {
         opacity: 1;
         visibility: visible; }
   .promo__logo {
@@ -2967,6 +2985,9 @@ p {
         .promo__hand img {
           min-height: 580px;
           object-position: -7% 0; } }
+      @media (min-width: 1800px) {
+        .promo__hand img {
+          object-position: -220% 0; } }
   .promo__title {
     max-width: 180px;
     margin-right: auto;
@@ -3063,7 +3084,7 @@ p {
   .features__vertical-img img {
     position: absolute;
     top: 0;
-    right: -56px;
+    right: -80px;
     bottom: 0;
     z-index: 1; }
     @media (min-width: 768px) {
@@ -3651,7 +3672,7 @@ p {
     letter-spacing: -0.6px; }
   .dilers__more {
     font-size: 16px;
-    padding: 7px 32px 10px 32px; }
+    padding: 7px 32px 9px 32px; }
   @media (min-width: 768px) {
     .dilers .slick-dots {
       padding-top: 26px; } }
@@ -3779,3 +3800,41 @@ p {
     flex: none; }
   .about-company__link {
     display: block; }
+
+.promo-video .modal-body {
+  padding: 0; }
+
+.promo-video .modal-content {
+  position: static; }
+
+@media (min-width: 768px) {
+  .promo-video .modal-dialog {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 95px;
+    padding-left: 95px;
+    margin: 1.75rem auto; } }
+
+@media (min-width: 1344px) {
+  .promo-video .modal-dialog {
+    max-width: 1343px;
+    width: 100%;
+    padding-right: 95px;
+    padding-left: 95px; } }
+
+.promo-video__close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: .2s ease-in-out; }
+  .promo-video__close svg {
+    width: 100%;
+    height: 100%;
+    fill: #fff; }
+  .promo-video__close:hover svg {
+    fill: #005691; }

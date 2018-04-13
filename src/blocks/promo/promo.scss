@@ -35,12 +35,24 @@
 	&__header {
 		transition: .2s ease;
 		.yandex-btn {
+			padding: 15px 32px 15px 56px;
+			margin-bottom: 0;
+			font-size: 0;
 			opacity: 0;
 			visibility: hidden;
 			transition: .2s ease;
-
+			&::before {
+				left: 50%;
+				@media (min-width: $screen-md) {
+				   left: 36px;
+				}
+			}
+			@media (min-width: $screen-md) {
+				font-size: 16px;
+				padding: 13px 32px 14px 56px;
+			}
 		}
-		&.sticky {
+		&.show {
 			position: fixed;
 			top: 0;
 			right: 0;
@@ -94,6 +106,9 @@
 				min-height: 580px;
 				object-position: -7% 0;
 
+			}
+			@media (min-width: 1800px) {
+				object-position: -220% 0;
 			}
 		}
 	}
