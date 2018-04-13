@@ -2645,6 +2645,7 @@ html {
   display: none; }
 
 .btn {
+  position: relative;
   display: inline-block;
   padding: 12px 32px 12px 32px;
   width: 100%;
@@ -2655,7 +2656,8 @@ html {
   color: #FFFFFF;
   text-align: center;
   transition: .2s ease-in;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1; }
   .btn:hover {
     background-color: #005691;
     text-decoration: none; }
@@ -2665,6 +2667,16 @@ html {
     .btn--violet:hover {
       background-color: #005691;
       color: #fff; }
+    .btn--violet-no-hover:hover {
+      background-color: transparent;
+      color: #005691; }
+  .btn--violet-fill {
+    outline: 1px solid #fff;
+    color: #fff;
+    background-color: #005691; }
+    .btn--violet-fill:hover {
+      color: #fff;
+      background-color: #005691; }
 
 body {
   font: 14px/1.428 "Bosch Sans", sans-serif;
@@ -2871,18 +2883,17 @@ p {
     .yandex-btn {
       width: 297px;
       margin-bottom: 0; } }
-  .yandex-btn::before {
-    content: '';
+  .yandex-btn svg {
     position: absolute;
     top: 50%;
     left: 36px;
     width: 23px;
     height: 24px;
     transform: translate(-50%, -50%);
-    background: transparent url(../img/icon/cart-icon.png) 0 0 no-repeat;
+    fill: #477abd;
     transition: .2s ease-in; }
-  .yandex-btn:hover::before {
-    background-image: url(../img/icon/cart-icon-hover.png); }
+  .yandex-btn:hover svg {
+    fill: #fff; }
 
 .modal-backdrop {
   background-color: rgba(10, 25, 38, 0.9); }
@@ -3427,7 +3438,8 @@ p {
         margin-bottom: 45px; } }
     @media (min-width: 1344px) {
       .features-more__item {
-        margin-bottom: 48px; } }
+        margin-bottom: 48px;
+        max-width: 420px; } }
   .features-more__img {
     display: block;
     margin-bottom: 3px; }
@@ -3463,7 +3475,8 @@ p {
 
 .in-complect {
   padding-top: 27px;
-  padding-bottom: 23px; }
+  padding-bottom: 23px;
+  text-align: center; }
   @media (min-width: 768px) {
     .in-complect {
       padding-top: 33px;
@@ -3474,26 +3487,37 @@ p {
   .in-complect__main-slider {
     position: relative;
     z-index: 1;
-    font-size: 0; }
+    font-size: 0;
+    margin-top: 30px; }
+    @media (min-width: 768px) {
+      .in-complect__main-slider {
+        margin-top: 41px; } }
+    @media (min-width: 1344px) {
+      .in-complect__main-slider {
+        margin-top: 92px; } }
   .in-complect__photos {
     margin-bottom: 15px; }
   .in-complect__title {
-    margin-bottom: 30px;
+    margin-bottom: 0;
     text-align: center; }
+  .in-complect__togle {
+    display: inline-flex; }
+  .in-complect__toggle-slide {
+    flex: none;
+    max-width: 243px;
+    border: none;
+    outline: 1px solid #005691;
+    padding: 13px 32px 14px 32px; }
+  .in-complect__has {
+    text-align: left; }
     @media (min-width: 768px) {
-      .in-complect__title {
-        margin-bottom: 41px; } }
+      .in-complect__has {
+        padding-top: 51px;
+        padding-left: 18px; } }
     @media (min-width: 1344px) {
-      .in-complect__title {
-        margin-bottom: 92px; } }
-  @media (min-width: 768px) {
-    .in-complect__has {
-      padding-top: 51px;
-      padding-left: 18px; } }
-  @media (min-width: 1344px) {
-    .in-complect__has {
-      padding-top: 183px;
-      margin-left: -43px; } }
+      .in-complect__has {
+        padding-top: 183px;
+        margin-left: -43px; } }
   .in-complect__item {
     position: relative;
     margin-bottom: 13px;

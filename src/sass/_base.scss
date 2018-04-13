@@ -243,20 +243,19 @@ p {
 		width: 297px;
 		margin-bottom: 0;
 	}
-	&::before {
-		content: '';
+	svg {
 		position: absolute;
 		top: 50%;
 		left: 36px;
 		width: 23px;
 		height: 24px;
 		transform: translate(-50%, -50%);
-		background: transparent url(../img/icon/cart-icon.png) 0 0 no-repeat;
+		fill: #477abd;
 		transition: .2s ease-in;
 	}
 	&:hover {
-		&::before {
-			background-image: url(../img/icon/cart-icon-hover.png);
+		svg{
+			fill: #fff;
 		}
 	}
 }

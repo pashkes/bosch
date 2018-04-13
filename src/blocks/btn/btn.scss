@@ -3,6 +3,7 @@
 @import "../../sass/settings/variables";
 
 .btn {
+	position:relative;
 	display: inline-block;
 	padding: 12px 32px 12px 32px;
 	width: 100%;
@@ -14,11 +15,10 @@
 	text-align: center;
 	transition: .2s ease-in;
 	cursor: pointer;
+	z-index: 1;
 	&:hover {
 		background-color: #005691;
 		text-decoration: none;
-	}
-	&:active {
 	}
 	&--violet {
 		border: 1px solid #005691;
@@ -26,6 +26,21 @@
 		&:hover {
 			background-color: #005691;
 			color: #fff;
+		}
+		&-no-hover {
+			&:hover {
+				background-color: transparent;
+				color: #005691; 
+			}
+		}
+	}
+	&--violet-fill {
+		outline: 1px solid #fff;
+		color: #fff;
+		background-color: #005691;
+		&:hover {
+			color: #fff;
+			background-color: #005691;
 		}
 	}
 }

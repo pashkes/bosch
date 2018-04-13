@@ -4,6 +4,7 @@
 .in-complect {
 	padding-top: 27px;
 	padding-bottom: 23px;
+	text-align: center;
 	@media (min-width: $screen-md) {
 		padding-top: 33px;
 		padding-bottom: 0;
@@ -15,21 +16,34 @@
 		position: relative;
 		z-index: 1;
 		font-size: 0;
+		margin-top: 30px;
+		@media (min-width: $screen-md) {
+			margin-top: 41px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-top: 92px;
+		}
 	}
 	&__photos {
 		margin-bottom: 15px;
 	}
 	&__title {
-		margin-bottom: 30px;
+		margin-bottom: 0;
 		text-align: center;
-		@media (min-width: $screen-md) {
-			margin-bottom: 41px;
-		}
-		@media(min-width: $screen-xl) {
-			margin-bottom: 92px;
-		}
 	}
+	&__togle {
+		display: inline-flex;
+	}
+	&__toggle-slide {
+		flex: none;
+		max-width: 243px;
+		border: none;
+		outline: 1px solid #005691;
+		padding: 13px 32px 14px 32px;
+	}
+
 	&__has {
+		text-align: left;
 		@media (min-width: $screen-md) {
 			padding-top: 51px;
 			padding-left: 18px;

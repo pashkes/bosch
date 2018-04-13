@@ -1,9 +1,9 @@
+
 // .about-company scripts goes here 
 
 /*$(function() {
 	
 });*/
-
 (function () {
 	$('.js-demo-slider').slick({
 		arrows: false,
@@ -71,12 +71,26 @@ $(function () {
 
 	$('.js-in-complect-main-slider').slick({
 		arrows: false,
+		swipe: false,
+		touchMove: false,
 		responsive: [{
 			breakpoint: 1343,
 			settings: {
 				adaptiveHeight: true
 			}
 		}]
+	});
+
+	$(".js-toggle-slide").click(function(e){
+		e.preventDefault();
+		slideIndex = $(this).index();
+		$( '.js-in-complect-main-slider' ).slick('slickGoTo', ( parseInt(slideIndex)) );
+		if (!$(this).hasClass('btn--violet-fill')) {
+			$(".js-toggle-slide").removeClass('btn--violet-fill');
+			$(this).addClass('btn--violet-fill');
+		} else {
+			return false;
+		}
 	});
 });
 $(function() {
@@ -119,21 +133,6 @@ $(function() {
 		}]
 	});
 });
-// var header = $('.promo__header');
-// var headerHeight;
-// $(window).on('load resize', function () {
-// 	headerHeight = header.height() + 16;
-// });
-// $(window).scroll(function(){
-// 	if ($(window).scrollTop() >= 16) {
-// 		$('.promo__header').addClass('sticky');
-// 		$('body').css('margin-top', headerHeight);.promo__hand img
-// 	}
-// 	else {
-// 		$('.promo__header').removeClass('sticky');
-// 		$('body').css('margin-top', 0);
-// 	}
-// });
 (function () {
   $('.js-sticky-header').stick_in_parent({
     parent: $('body'),
