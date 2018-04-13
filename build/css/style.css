@@ -3503,13 +3503,19 @@ p {
     margin-bottom: 0;
     text-align: center; }
   .in-complect__togle {
-    display: inline-flex; }
+    display: flex;
+    width: 100%;
+    justify-content: center; }
   .in-complect__toggle-slide {
     flex: none;
-    max-width: 243px;
     border: none;
     outline: 1px solid #005691;
-    padding: 13px 32px 14px 32px; }
+    max-width: 133px;
+    padding: 13px 10px 14px 10px; }
+    @media (min-width: 768px) {
+      .in-complect__toggle-slide {
+        max-width: 243px;
+        padding: 13px 32px 14px 32px; } }
   .in-complect__has {
     text-align: left; }
     @media (min-width: 768px) {
