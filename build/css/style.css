@@ -2647,7 +2647,7 @@ html {
 .btn {
   position: relative;
   display: inline-block;
-  padding: 12px 32px 12px 32px;
+  padding: 9px 32px 14px 32px;
   width: 100%;
   border: 1px solid #ffffff;
   vertical-align: top;
@@ -2946,7 +2946,7 @@ p {
       @media (min-width: 768px) {
         .promo__header .yandex-btn {
           font-size: 16px;
-          padding: 13px 32px 14px 56px; } }
+          padding: 11px 32px 16px 56px; } }
     .promo__header.show {
       position: fixed;
       top: 0;
@@ -3150,6 +3150,8 @@ p {
     .demo__slide a {
       display: block;
       color: #383838; }
+  .demo a:hover {
+    text-decoration: none; }
   .demo__title {
     max-width: 200px;
     margin-right: auto;
