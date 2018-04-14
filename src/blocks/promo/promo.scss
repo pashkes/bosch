@@ -6,6 +6,7 @@
 	background-image: -moz-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
 	background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
 	background-image: -ms-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
+	overflow: hidden;
 	@media (min-width: $screen-md) {
 		padding-bottom: 111px;
 	}
@@ -46,13 +47,13 @@
 			svg {
 				left: 50%;
 				@media (min-width: $screen-md) {
-				    left: 36px;
+					left: 36px;
 				}
 			}
 			&::before {
 				left: 50%;
 				@media (min-width: $screen-md) {
-				   left: 36px;
+					left: 36px;
 				}
 			}
 			@media (min-width: $screen-md) {
@@ -100,6 +101,9 @@
 		}
 		@media(min-width: $screen-xl) {
 			margin-top: -178px;
+			opacity: 0;
+			transform: translateX(100px);
+			transition: all .7s ease-out .3s;
 		}
 		img {
 			object-fit: cover;
@@ -132,6 +136,10 @@
 			max-width: 100%;
 			margin-top: -24px;
 		}
+		@media(min-width: $screen-xl) {
+			transform: translateY(-30px);
+			transition: all .6s ease-out;
+		}
 	}
 
 	&__psevdo-logo {
@@ -157,6 +165,9 @@
 		}
 		@media(min-width: $screen-xl) {
 			margin-top: -24px;
+			opacity: 0;
+			transform: translateY(30px);
+			transition: all .4s ease-out .8s;
 		}
 	}
 }

@@ -6,20 +6,19 @@ mixin promo()
           .col-auto
             .promo__logo
               picture
-                source(media="(min-width: 1344px)" srcset="img/logo-md.png")
-                img(src="img/logo-lg.png" width="79" height="26" alt="Bosch - разработано для жизни")
+                source(media="(min-width: 1344px)" srcset="img/logo-md.png" rel="preload" as="image")
+                img(src="img/logo-lg.png" rel="preload" as="image" width="79" height="26" alt="Bosch - разработано для жизни")
           .col-auto
             a(href="#").btn.btn--violet.yandex-btn
               | <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70"><path d="M19.9 58.1c-3.3 0-5.9 2.6-5.9 5.9 0 3.3 2.6 5.9 5.9 5.9s5.9-2.6 5.9-5.9c.2-3.3-2.6-5.9-5.9-5.9zm34.2 0c-3.3 0-5.9 2.6-5.9 5.9 0 3.3 2.6 5.9 5.9 5.9 3.3 0 5.9-2.6 5.9-5.9.2-3.3-2.4-5.9-5.9-5.9z" fill="#222"/><path d="M70.1 14H21.2l-5-14H.1v9H10l15.3 42 39.4-10.7s4.5-1.1 4.5-7.4V14h.9z" /></svg>
               | Купить на Яндекс.Маркет
-    .container
     picture
-      img.promo__psevdo-logo(src="img/psevdo-logo.png" width="212" height="48" alt="Эволюция твоего инструмента")
-    h1.promo__title Эволюция твоего инструмента
-    .promo__hand
+      img.promo__psevdo-logo(src="img/psevdo-logo.png" width="212" height="48" alt="Эволюция твоего инструмента" rel="preload" as="image")
+    h1.promo__title(data-scroll) Эволюция твоего инструмента
+    .promo__hand(data-scroll)
       picture
         img(src="img/hand.png")
     .container
-      button.promo__btn.btn(type="button" data-toggle="modal" data-target="#promo-video") Смотреть промо-ролик
+      button.promo__btn.btn(type="button" data-toggle="modal" data-target="#promo-video" data-scroll) Смотреть промо-ролик
 
 

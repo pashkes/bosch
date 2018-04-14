@@ -1,8 +1,8 @@
 mixin features()
 	section.features.noise-gradient
 		.container.features__content
-			h2.features__title Первая инновационная аккумуляторная отвертка Bosch GO
-			p.features__subtitle
+			h2.features__title(data-scroll) Первая инновационная аккумуляторная отвертка Bosch GO
+			p.features__subtitle(data-scroll)
 				| Bosch GO – это высокая эффективность при малых размерах. Инструмент легче, удобнее
 				| и компактнее шуруповерта. При этом
 				| он не требует больших усилий – закручивает и раскручивает шуруп одним надавливанием. Bosch Go – отличный помощник в домашнем хозяйстве, ремонте и строительстве.
@@ -11,21 +11,21 @@ mixin features()
 					.col-8.col-sm-9.col-xl-8
 						.row.justify-content-sm-between.align-content-justify-content
 							.col-md.col-xl-auto
-								.features__item
+								.features__item.features__item-1(data-scroll)
 									h3.features__subject Мощная
 									p.features__description
 										| В 4 раза мощнее, чем
 										| любая другая  отвертка такого же размера
 
 							.col-md.col-xl-auto
-								.features__item
+								.features__item.features__item-2(data-scroll)
 									h3.features__subject Точная
 									p.features__description
 										| Электронная муфта
 										| E-clutch остановит инструмент в нужный момент
 
 							.col-md.col-xl-auto
-								.features__item
+								.features__item.features__item-3(data-scroll)
 									h3.features__subject Удобная
 									p.features__description
 										| Удобное управление — нажми и работай
@@ -33,4 +33,4 @@ mixin features()
 					.col-4.col-sm-3.col-xl-4
 						.features__vertical-img
 							.features__img-inner
-								img(src="img/vertical.png")
+								img.features__img(src="img/vertical.png" data-scroll)

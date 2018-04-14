@@ -1,11 +1,11 @@
 mixin in-complect()
   section.in-complect.noise-gradient
     .container
-      h2.in-complect__title Что входит в комлект Bosch GO
-      .in-complect__togle
+      h2.in-complect__title(data-scroll) Что входит в комлект Bosch GO
+      .in-complect__togle(data-scroll)
         button.btn.in-complect__toggle-slide.btn.btn--violet.btn--violet-no-hover.btn--violet-fill.js-toggle-slide(type="button") Bosch GO SET
         button.btn.in-complect__toggle-slide.btn.btn--violet.btn--violet-no-hover.js-toggle-slide(type="button") Bosch GO SOLO
-      ul.in-complect__main-slider.js-in-complect-main-slider
+      ul.in-complect__main-slider.js-in-complect-main-slider(data-scroll)
         li.in-complect__main-slide
           .row
             .col-md-6.col-xl-8
@@ -15,7 +15,7 @@ mixin in-complect()
                 li
                   img(src="img/02_box.png")
             .col-md-6.col-xl-4
-              ul.in-complect__has
+              ul.in-complect__has(data-scroll)
                 li.in-complect__item Аккумуляторная отвертка Bosch GO
                 li.in-complect__item Комплект из 33 бит
                 li.in-complect__item Зарядное устроиство
@@ -31,7 +31,7 @@ mixin in-complect()
                 li
                   img(src="img/02_box.png")
             .col-md-6.col-xl-4
-              ul.in-complect__has
+              ul.in-complect__has(data-scroll)
                 li.in-complect__item Аккумуляторная отвертка Bosch GO
                 li.in-complect__item Комплект из 33 бит
                 li.in-complect__item Зарядное устроиство

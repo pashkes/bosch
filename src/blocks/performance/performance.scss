@@ -20,6 +20,9 @@
 		@media(min-width: $screen-xl) {
 			max-width: 100%;
 			margin-bottom: 26px;
+			opacity: 0;
+			transform: translateY(40px);
+			transition: all .5s ease;
 		}
 
 	}
@@ -34,6 +37,9 @@
 		}
 		@media(min-width: $screen-xl) {
 			margin-bottom: 36px;
+			opacity: 0;
+			transform: translateY(40px);
+			transition: all .5s ease;
 		}
 	}
 	&__subtitle {
@@ -51,6 +57,9 @@
 			margin-left: auto;
 			margin-bottom: 74px;
 			line-height: 1.75;
+			opacity: 0;
+			transform: translateY(40px);
+			transition: all .5s ease .35s;
 		}
 	}
 	&__demo {
@@ -385,6 +394,13 @@
 			padding-left: 52px;
 		}
 	}
+	&__tech {
+		@media(min-width: $screen-xl) {
+			opacity: 0;
+			transform: translateY(40px);
+			transition: all .5s ease .2s;
+		}
+	}
 	&__row {
 		position: relative;
 		display: flex;
@@ -442,14 +458,47 @@
 	@media(min-width: $screen-xl) {
 		display: flex;
 	}
+	&__top-half,
+	&__bottom-half {
+		position:relative;
+	}
+	&__full {
+		position: absolute;
+		top: 56.1%;
+		left: 50.1%;
+		transform: translate(-50%, -50%);
+		width: 929px;
+		height: 183px;
+		z-index: 1;
+	}
+	&__full-inner {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-position:  0 bottom;
+		background-repeat:  no-repeat;
+		z-index: 2;
+		height: 180px;
+		transition: height 1.6s ease 1.2s;
+		&.visible {
+			height: 90px;
+		}
+	}
 	&__img {
 		position: absolute;
 		top: 45.2%;
 		left: 45.2%;
-		transform: translate(-50%, -50%);
+		margin-top: -82px;
+		margin-left: -464px;
 		width: 929px;
 		height: 164px;
 		z-index: -1;
+		@media(min-width: $screen-xl) {
+			opacity: 0;
+			transform: translateY(50px);
+			transition: .5s ease .5s;
+		}
 	}
 	&__row {
 		position: relative;
@@ -469,6 +518,7 @@
 	}
 	&__desc {
 		position: relative;
+		opacity: 0;
 		&::before {
 			content: '';
 			position: absolute;
@@ -494,6 +544,8 @@
 		}
 		&-1 {
 			left: 1.5%;
+			transform: translateY(-20px);
+			transition: all .3s ease 2.6s;
 			&::before {
 				height: 184px;
 				top: 94%;
@@ -506,6 +558,8 @@
 			}
 		}
 		&-2 {
+			transform: translateY(-20px);
+			transition: all .3s ease 2.8s;
 			&::before {
 				top: 121%;
 				height: 123px;
@@ -520,6 +574,8 @@
 			}
 		}
 		&-3 {
+			transform: translateY(-20px);
+			transition: all .3s ease 3s;
 			&::before {
 				top: 121%;
 				height: 165px;
@@ -534,6 +590,8 @@
 			}
 		}
 		&-4 {
+			transform: translateY(20px);
+			transition: all .3s ease 3.2s;
 			&::before {
 				bottom: 115%;
 				left: 48.7%;
@@ -549,6 +607,8 @@
 			}
 		}
 		&-5 {
+			transform: translateY(20px);
+			transition: all .3s ease 3.4s;
 			&::before {
 				height: 129px;
 				bottom: 116%;
@@ -563,6 +623,8 @@
 			}
 		}
 		&-6 {
+			transform: translateY(20px);
+			transition: all .3s ease 3.6s;
 			&::before {
 				bottom: 114%;
 				height: 183px;
@@ -577,6 +639,8 @@
 			}
 		}
 		&-7 {
+			transform: translateY(20px);
+			transition: all .3s ease 3.8s;
 			&::before {
 				bottom: 124%;
 				height: 122px;
@@ -593,6 +657,8 @@
 			}
 		}
 		&-8 {
+			transform: translateY(20px);
+			transition: all .3s ease 4s;
 			&::before {
 				bottom: 114%;
 				height: 178px;

@@ -48,6 +48,9 @@
 		@media(min-width: $screen-xl) {
 			max-width: 530px;
 			margin-bottom: 40px;
+			opacity: 0;
+			transform: translateY(40px);
+			transition: all .4s .4s;
 		}
 	}
 	&__subtitle {
@@ -62,6 +65,9 @@
 			margin-bottom: 74px;
 			line-height: 1.75;
 			max-width: 644px;
+			opacity: 0;
+			transform: translateY(40px);
+			transition: all .4s .6s;
 		}
 	}
 	&__vertical-img {
@@ -78,6 +84,13 @@
 			@media(min-width: $screen-xl) {
 			    width: 198px;
 			}
+		}
+	}
+	&__img {
+		@media(min-width: $screen-xl) {
+			opacity: 0;
+			transform: translateY(100px);
+			transition: all .7s;
 		}
 	}
 	&__subject {
@@ -99,8 +112,19 @@
 	}
 	&__item {
 		margin-bottom: 22px;
-	}
-	.slick-dots {
-
+		@media(min-width: $screen-xl) {
+			opacity: 0;
+			transform: translateY(40px);
+			transition: all .4s .75s;
+			&-1 {
+				transition: all .4s .75s;
+			}
+			&-2 {
+				transition: all .4s .90s;
+			}
+			&-3 {
+				transition: all .4s 1.05s;
+			}
+		}
 	}
 }

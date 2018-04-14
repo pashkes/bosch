@@ -1,7 +1,7 @@
 mixin reviews()
 	.reviews.noise-gradient
 		.container.z-index
-			h2.reviews__title О Bosch GO говорят
+			h2.reviews__title(data-scroll) О Bosch GO говорят
 			.reviews__slider
 				button.reviews__arrow.slider-arrows.slider-arrows--prev.js-slider-arrow-prev(type="button") <svg width="13" height="26" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M-1-1h15v28H-1z"/><g><path d="M1.738 13.105L12.718 1.44c.27-.286.27-.747 0-1.033s-.703-.287-.973 0L.275 12.59a.761.761 0 0 0 0 1.034l11.47 12.179c.132.14.31.216.484.216s.351-.07.484-.216a.761.761 0 0 0 0-1.034L1.738 13.105z" stroke-width="5" stroke="null"/></g></svg>
 				button.reviews__arrow.slider-arrows.slider-arrows--next.js-slider-arrow-next(type="button") <svg width="13" height="28" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M-1-1h15v30H-1z"/><g><path d="M11.126 13.975L.506 26.317c-.261.303-.261.79 0 1.093s.68.304.941 0L12.54 14.52a.861.861 0 0 0 0-1.094L1.447.539C1.32.39 1.147.31.98.31S.64.385.511.54a.861.861 0 0 0 0 1.093l10.615 12.342z" stroke="null"/></g></svg>
@@ -9,13 +9,13 @@ mixin reviews()
 					li.reviews__slide
 						.row.flex-xl-row-reverse
 							.col-xl-7
-								.reviews__video.embed-responsive.embed-responsive-16by9
-									iframe( class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/XjAzX8ddkLY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+								.reviews__video.reviews__video--first.embed-responsive.embed-responsive-16by9(data-scroll)
+									div( class="embed-responsive-item" data-url="XjAzX8ddkLY" data-scroll data-scroll-showCallback="playVideoReview()" data-scroll-hideCallback="stopVideoReview()" id="video-review")
 
 							.col-xl-5
-								h3.reviews__desc Bosch GO — The Only Smart Screwdriver. A Simple Push. A Perfect Finish!
-								a(href="#").reviews__name Sergey Shevelyov
-								.reviews__text
+								h3.reviews__desc(data-scroll) Bosch GO — The Only Smart Screwdriver. A Simple Push. A Perfect Finish!
+								a(href="#" data-scroll).reviews__name Sergey Shevelyov
+								.reviews__text(data-scroll)
 									p
 										| Bosch GO не имеет выключателя ON / OFF, и единственным механизмом,
 										| на котором она работает, является ... «Нажатие», чтобы закрутить шуруп. Даже
@@ -31,9 +31,9 @@ mixin reviews()
 								.reviews__video.embed-responsive.embed-responsive-16by9
 									iframe( class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/XjAzX8ddkLY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
 							.col-xl-5
-								h3.reviews__desc Bosch GO — The Only Smart Screwdriver. A Simple Push. A Perfect Finish!
-								a(href="#").reviews__name Sergey Shevelyov
-								.reviews__text
+								h3.reviews__desc(data-scroll) Bosch GO — The Only Smart Screwdriver. A Simple Push. A Perfect Finish!
+								a(href="#" data-scroll).reviews__name Sergey Shevelyov
+								.reviews__text(data-scroll)
 									p
 										| Bosch GO не имеет выключателя ON / OFF, и единственным механизмом,
 										| на котором она работает, является ... «Нажатие», чтобы закрутить шуруп. Даже

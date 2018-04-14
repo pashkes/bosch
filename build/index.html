@@ -15,7 +15,7 @@
             <div class="col-auto">
               <div class="promo__logo">
                 <picture>
-                  <source media="(min-width: 1344px)" srcset="img/logo-md.png"/><img src="img/logo-lg.png" width="79" height="26" alt="Bosch - разработано для жизни"/>
+                  <source media="(min-width: 1344px)" srcset="img/logo-md.png" rel="preload" as="image"/><img src="img/logo-lg.png" rel="preload" as="image" width="79" height="26" alt="Bosch - разработано для жизни"/>
                 </picture>
               </div>
             </div>
@@ -25,20 +25,19 @@
           </div>
         </div>
       </header>
-      <div class="container"></div>
-      <picture><img class="promo__psevdo-logo" src="img/psevdo-logo.png" width="212" height="48" alt="Эволюция твоего инструмента"/></picture>
-      <h1 class="promo__title">Эволюция твоего инструмента</h1>
-      <div class="promo__hand">
+      <picture><img class="promo__psevdo-logo" src="img/psevdo-logo.png" width="212" height="48" alt="Эволюция твоего инструмента" rel="preload" as="image"/></picture>
+      <h1 class="promo__title" data-scroll="data-scroll">Эволюция твоего инструмента</h1>
+      <div class="promo__hand" data-scroll="data-scroll">
         <picture><img src="img/hand.png"/></picture>
       </div>
       <div class="container">
-        <button class="promo__btn btn" type="button" data-toggle="modal" data-target="#promo-video">Смотреть промо-ролик</button>
+        <button class="promo__btn btn" type="button" data-toggle="modal" data-target="#promo-video" data-scroll="data-scroll">Смотреть промо-ролик</button>
       </div>
     </div>
     <section class="features noise-gradient">
       <div class="container features__content">
-        <h2 class="features__title">Первая инновационная аккумуляторная отвертка Bosch GO</h2>
-        <p class="features__subtitle">
+        <h2 class="features__title" data-scroll="data-scroll">Первая инновационная аккумуляторная отвертка Bosch GO</h2>
+        <p class="features__subtitle" data-scroll="data-scroll">
           Bosch GO – это высокая эффективность при малых размерах. Инструмент легче, удобнее
           и компактнее шуруповерта. При этом
           он не требует больших усилий – закручивает и раскручивает шуруп одним надавливанием. Bosch Go – отличный помощник в домашнем хозяйстве, ремонте и строительстве.
@@ -48,7 +47,7 @@
             <div class="col-8 col-sm-9 col-xl-8">
               <div class="row justify-content-sm-between align-content-justify-content">
                 <div class="col-md col-xl-auto">
-                  <div class="features__item">
+                  <div class="features__item features__item-1" data-scroll="data-scroll">
                     <h3 class="features__subject">Мощная</h3>
                     <p class="features__description">
                       В 4 раза мощнее, чем
@@ -57,7 +56,7 @@
                   </div>
                 </div>
                 <div class="col-md col-xl-auto">
-                  <div class="features__item">
+                  <div class="features__item features__item-2" data-scroll="data-scroll">
                     <h3 class="features__subject">Точная</h3>
                     <p class="features__description">
                       Электронная муфта
@@ -66,7 +65,7 @@
                   </div>
                 </div>
                 <div class="col-md col-xl-auto">
-                  <div class="features__item">
+                  <div class="features__item features__item-3" data-scroll="data-scroll">
                     <h3 class="features__subject">Удобная</h3>
                     <p class="features__description">Удобное управление — нажми и работай</p>
                   </div>
@@ -75,7 +74,7 @@
             </div>
             <div class="col-4 col-sm-3 col-xl-4">
               <div class="features__vertical-img">
-                <div class="features__img-inner"><img src="img/vertical.png"/></div>
+                <div class="features__img-inner"><img class="features__img" src="img/vertical.png" data-scroll="data-scroll"/></div>
               </div>
             </div>
           </div>
@@ -96,8 +95,8 @@
     </section>
     <section class="performance noise-gradient">
       <div class="container z-index">
-        <h2 class="performance__title">Включение при нажатии, отличный результат!</h2>
-        <p class="performance__subtitle">
+        <h2 class="performance__title" data-scroll="data-scroll">Включение при нажатии, отличный результат!</h2>
+        <p class="performance__subtitle" data-scroll="data-scroll">
           Bosch GO — первая в мире смарт-отвертка с технологией Push & Go. Для старта работы достаточно
           нажать на шуруп. Электронная муфта E-Clutch регулирует крутящий момент
           и автоматически останавливает работу при завершении.
@@ -105,12 +104,15 @@
         <div class="performance-xl">
           <div class="performance-xl__row performance-xl__row--top">
             <div class="performance-xl__row-inner">
-              <div class="performance-xl__desc performance-xl__desc-1"><span>1/4” HEX Держатель бит</span></div>
-              <div class="performance-xl__desc performance-xl__desc-2"><span>Встроенный аккумулятор (1.5 Ач) с системой защиты элементов питания (ECP)</span></div>
-              <div class="performance-xl__desc performance-xl__desc-3"><span>Электронная муфта E-Clutch для регулировки крутящего момента</span></div>
+              <div class="performance-xl__desc performance-xl__desc-1" data-scroll="data-scroll"><span>1/4” HEX Держатель бит</span></div>
+              <div class="performance-xl__desc performance-xl__desc-2" data-scroll="data-scroll"><span>Встроенный аккумулятор (1.5 Ач) с системой защиты элементов питания (ECP)</span></div>
+              <div class="performance-xl__desc performance-xl__desc-3" data-scroll="data-scroll"><span>Электронная муфта E-Clutch для регулировки крутящего момента</span></div>
             </div>
           </div>
-          <div class="performance-xl__img">
+          <div class="performance-xl__img" data-scroll="data-scroll">
+            <div class="performance-xl__full">
+              <div class="performance-xl__full-inner" data-scroll="data-scroll" style="background-image: url(img/full.png)"></div>
+            </div>
             <div class="performance-xl__top-half">
               <picture>
                 <source media="(min-width: 1344px)" srcset="img/half-grey-xl.png"/><img class="performance__img" src="img/half-grey.png"/>
@@ -124,11 +126,11 @@
           </div>
           <div class="performance-xl__row performance-xl__row--bottom">
             <div class="performance-xl__row-inner">
-              <div class="performance-xl__desc performance-xl__desc-4"><span>Включение нажатием</span></div>
-              <div class="performance-xl__desc performance-xl__desc-5"><span>Удобный прорезиненый корпус</span></div>
-              <div class="performance-xl__desc performance-xl__desc-6"><span>Переключатель реверса. Три режима работы: вперед, ручной режим, назад</span></div>
-              <div class="performance-xl__desc performance-xl__desc-7"><span>Светодиодный индикатор заряда</span></div>
-              <div class="performance-xl__desc performance-xl__desc-8"><span>Micro-USB разъем для зарядки аккумулятора</span></div>
+              <div class="performance-xl__desc performance-xl__desc-4" data-scroll="data-scroll"><span>Включение нажатием</span></div>
+              <div class="performance-xl__desc performance-xl__desc-5" data-scroll="data-scroll"><span>Удобный прорезиненый корпус</span></div>
+              <div class="performance-xl__desc performance-xl__desc-6" data-scroll="data-scroll"><span>Переключатель реверса. Три режима работы: вперед, ручной режим, назад</span></div>
+              <div class="performance-xl__desc performance-xl__desc-7" data-scroll="data-scroll"><span>Светодиодный индикатор заряда</span></div>
+              <div class="performance-xl__desc performance-xl__desc-8" data-scroll="data-scroll"><span>Micro-USB разъем для зарядки аккумулятора</span></div>
             </div>
           </div>
         </div>
@@ -166,16 +168,16 @@
             </div>
           </li>
         </ul>
-        <h2 class="performance__title-tech">Технические характеристики</h2>
+        <h2 class="performance__title-tech" data-scroll="data-scroll">Технические характеристики</h2>
         <div class="performance__tech-inner">
           <div class="row justify-content-xl-between">
-            <div class="col-md-6 col-xl-auto">
+            <div class="col-md-6 col-xl-auto performance__tech" data-scroll="data-scroll">
               <div class="performance__row"><span class="performance__name">Класс инструмента</span><strong class="performance__value">Профессиональный</strong></div>
               <div class="performance__row"><span class="performance__name">Максимальный крутящий момент</span><strong class="performance__value">5/2,5 Нм</strong></div>
               <div class="performance__row"><span class="performance__name">Число оборотов<span>холостого хода</span></span><strong class="performance__value">360 об./мин</strong></div>
               <div class="performance__row performance__row--last-md"><span class="performance__name">Максимальный диаметр шурупов</span><strong class="performance__value">5 мм</strong></div>
             </div>
-            <div class="col-md-6 col-xl-auto">
+            <div class="col-md-6 col-xl-auto performance__tech" data-scroll="data-scroll">
               <div class="performance__row"><span class="performance__name">Тип аккумулятора</span><strong class="performance__value">Li</strong></div>
               <div class="performance__row"><span class="performance__name">Напряжение<span>аккумулятора</span></span><strong class="performance__value">3,6 В</strong></div>
               <div class="performance__row"><span class="performance__name">Время зарядки</span><strong class="performance__value">90 минут</strong></div>
@@ -191,19 +193,19 @@
         <div class="row">
           <div class="col-9">
             <ul class="features-more__list">
-              <li class="features-more__item">
+              <li class="features-more__item" data-scroll="data-scroll">
                 <div class="features-more__img"><img class="features-more__icon" src="img/icon/universal.png" alt="Производительная"/></div>
                 <div class="features-more__content"><span class="features-more__title">Универсальная</span>
                   <p class="features-more__description">Шесть ступеней регулировки крутящего широкого спектра работ</p>
                 </div>
               </li>
-              <li class="features-more__item">
+              <li class="features-more__item" data-scroll="data-scroll">
                 <div class="features-more__img"><img class="features-more__icon" src="img/icon/compact.png" alt="Универсальная"/></div>
                 <div class="features-more__content"><span class="features-more__title">Компактная</span>
                   <p class="features-more__description">Малые габариты и вес — легко носить его в кармане</p>
                 </div>
               </li>
-              <li class="features-more__item">
+              <li class="features-more__item" data-scroll="data-scroll">
                 <div class="features-more__img"><img class="features-more__icon" src="img/icon/performance.png" alt="Компактная"/></div>
                 <div class="features-more__content"><span class="features-more__title">Производительная</span>
                   <p class="features-more__description">До 300 шурупов на одном заряде аккумулятора</p>
@@ -216,12 +218,12 @@
     </section>
     <section class="in-complect noise-gradient">
       <div class="container">
-        <h2 class="in-complect__title">Что входит в комлект Bosch GO</h2>
-        <div class="in-complect__togle">
+        <h2 class="in-complect__title" data-scroll="data-scroll">Что входит в комлект Bosch GO</h2>
+        <div class="in-complect__togle" data-scroll="data-scroll">
           <button class="btn in-complect__toggle-slide btn btn--violet btn--violet-no-hover btn--violet-fill js-toggle-slide" type="button">Bosch GO SET</button>
           <button class="btn in-complect__toggle-slide btn btn--violet btn--violet-no-hover js-toggle-slide" type="button">Bosch GO SOLO</button>
         </div>
-        <ul class="in-complect__main-slider js-in-complect-main-slider">
+        <ul class="in-complect__main-slider js-in-complect-main-slider" data-scroll="data-scroll">
           <li class="in-complect__main-slide">
             <div class="row">
               <div class="col-md-6 col-xl-8">
@@ -231,7 +233,7 @@
                 </ul>
               </div>
               <div class="col-md-6 col-xl-4">
-                <ul class="in-complect__has">
+                <ul class="in-complect__has" data-scroll="data-scroll">
                   <li class="in-complect__item">Аккумуляторная отвертка Bosch GO</li>
                   <li class="in-complect__item">Комплект из 33 бит</li>
                   <li class="in-complect__item">Зарядное устроиство</li>
@@ -250,7 +252,7 @@
                 </ul>
               </div>
               <div class="col-md-6 col-xl-4">
-                <ul class="in-complect__has">
+                <ul class="in-complect__has" data-scroll="data-scroll">
                   <li class="in-complect__item">Аккумуляторная отвертка Bosch GO</li>
                   <li class="in-complect__item">Комплект из 33 бит</li>
                   <li class="in-complect__item">Зарядное устроиство</li>
@@ -265,7 +267,7 @@
     </section>
     <div class="reviews noise-gradient">
       <div class="container z-index">
-        <h2 class="reviews__title">О Bosch GO говорят</h2>
+        <h2 class="reviews__title" data-scroll="data-scroll">О Bosch GO говорят</h2>
         <div class="reviews__slider">
           <button class="reviews__arrow slider-arrows slider-arrows--prev js-slider-arrow-prev" type="button"><svg width="13" height="26" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M-1-1h15v28H-1z"/><g><path d="M1.738 13.105L12.718 1.44c.27-.286.27-.747 0-1.033s-.703-.287-.973 0L.275 12.59a.761.761 0 0 0 0 1.034l11.47 12.179c.132.14.31.216.484.216s.351-.07.484-.216a.761.761 0 0 0 0-1.034L1.738 13.105z" stroke-width="5" stroke="null"/></g></svg></button>
           <button class="reviews__arrow slider-arrows slider-arrows--next js-slider-arrow-next" type="button"><svg width="13" height="28" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M-1-1h15v30H-1z"/><g><path d="M11.126 13.975L.506 26.317c-.261.303-.261.79 0 1.093s.68.304.941 0L12.54 14.52a.861.861 0 0 0 0-1.094L1.447.539C1.32.39 1.147.31.98.31S.64.385.511.54a.861.861 0 0 0 0 1.093l10.615 12.342z" stroke="null"/></g></svg></button>
@@ -273,13 +275,13 @@
             <li class="reviews__slide">
               <div class="row flex-xl-row-reverse">
                 <div class="col-xl-7">
-                  <div class="reviews__video embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/XjAzX8ddkLY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+                  <div class="reviews__video reviews__video--first embed-responsive embed-responsive-16by9" data-scroll="data-scroll">
+                    <div class="embed-responsive-item" data-url="XjAzX8ddkLY" data-scroll="data-scroll" data-scroll-showCallback="playVideoReview()" data-scroll-hideCallback="stopVideoReview()" id="video-review"></div>
                   </div>
                 </div>
                 <div class="col-xl-5">
-                  <h3 class="reviews__desc">Bosch GO — The Only Smart Screwdriver. A Simple Push. A Perfect Finish!</h3><a class="reviews__name" href="#">Sergey Shevelyov</a>
-                  <div class="reviews__text">
+                  <h3 class="reviews__desc" data-scroll="data-scroll">Bosch GO — The Only Smart Screwdriver. A Simple Push. A Perfect Finish!</h3><a class="reviews__name" href="#" data-scroll="data-scroll">Sergey Shevelyov</a>
+                  <div class="reviews__text" data-scroll="data-scroll">
                     <p>
                       Bosch GO не имеет выключателя ON / OFF, и единственным механизмом,
                       на котором она работает, является ... «Нажатие», чтобы закрутить шуруп. Даже
@@ -303,8 +305,8 @@
                   </div>
                 </div>
                 <div class="col-xl-5">
-                  <h3 class="reviews__desc">Bosch GO — The Only Smart Screwdriver. A Simple Push. A Perfect Finish!</h3><a class="reviews__name" href="#">Sergey Shevelyov</a>
-                  <div class="reviews__text">
+                  <h3 class="reviews__desc" data-scroll="data-scroll">Bosch GO — The Only Smart Screwdriver. A Simple Push. A Perfect Finish!</h3><a class="reviews__name" href="#" data-scroll="data-scroll">Sergey Shevelyov</a>
+                  <div class="reviews__text" data-scroll="data-scroll">
                     <p>
                       Bosch GO не имеет выключателя ON / OFF, и единственным механизмом,
                       на котором она работает, является ... «Нажатие», чтобы закрутить шуруп. Даже
@@ -379,11 +381,11 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="promo-video__header">
-              <button class="promo-video__close" type="button" data-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.512 224.512"><path d="M224.507 6.997L217.521 0 112.256 105.258 6.998 0 .005 6.997l105.258 105.257L.005 217.512l6.993 7L112.256 119.24l105.265 105.272 6.986-7-105.258-105.258z"/></svg></button>
+              <button class="promo-video__close js-promo-video-close" type="button" data-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.512 224.512"><path d="M224.507 6.997L217.521 0 112.256 105.258 6.998 0 .005 6.997l105.258 105.257L.005 217.512l6.993 7L112.256 119.24l105.265 105.272 6.986-7-105.258-105.258z"/></svg></button>
             </div>
             <div class="modal-body">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/XjAzX8ddkLY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+                <div data-url="XjAzX8ddkLY" id="promo-video-player"></div>
               </div>
             </div>
           </div>
@@ -391,6 +393,7 @@
       </div>
     </div>
     <script src="js/libs.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

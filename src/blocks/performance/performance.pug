@@ -1,21 +1,23 @@
 mixin performance()
 	section.performance.noise-gradient
 		.container.z-index
-			h2.performance__title Включение при нажатии, отличный результат!
-			p.performance__subtitle
+			h2.performance__title(data-scroll) Включение при нажатии, отличный результат!
+			p.performance__subtitle(data-scroll)
 				| Bosch GO — первая в мире смарт-отвертка с технологией Push & Go. Для старта работы достаточно
 				| нажать на шуруп. Электронная муфта E-Clutch регулирует крутящий момент
 				| и автоматически останавливает работу при завершении.
 			.performance-xl
 				.performance-xl__row.performance-xl__row--top
 					.performance-xl__row-inner
-						.performance-xl__desc.performance-xl__desc-1
+						.performance-xl__desc.performance-xl__desc-1(data-scroll)
 							span 1/4” HEX Держатель бит
-						.performance-xl__desc.performance-xl__desc-2
+						.performance-xl__desc.performance-xl__desc-2(data-scroll)
 							span Встроенный аккумулятор (1.5 Ач) с системой защиты элементов питания (ECP)
-						.performance-xl__desc.performance-xl__desc-3
+						.performance-xl__desc.performance-xl__desc-3(data-scroll)
 							span Электронная муфта E-Clutch для регулировки крутящего момента
-				.performance-xl__img
+				.performance-xl__img(data-scroll)
+					.performance-xl__full
+						.performance-xl__full-inner(data-scroll style="background-image: url(img/full.png)")
 					.performance-xl__top-half
 						picture
 							source(media="(min-width: 1344px)" srcset="img/half-grey-xl.png")
@@ -26,15 +28,15 @@ mixin performance()
 							img.performance__img(src="img/vertical-half-color.png")
 				.performance-xl__row.performance-xl__row--bottom
 					.performance-xl__row-inner
-						.performance-xl__desc.performance-xl__desc-4
+						.performance-xl__desc.performance-xl__desc-4(data-scroll)
 							span Включение нажатием
-						.performance-xl__desc.performance-xl__desc-5
+						.performance-xl__desc.performance-xl__desc-5(data-scroll)
 							span Удобный прорезиненый корпус
-						.performance-xl__desc.performance-xl__desc-6
+						.performance-xl__desc.performance-xl__desc-6(data-scroll)
 							span Переключатель реверса. Три режима работы: вперед, ручной режим, назад
-						.performance-xl__desc.performance-xl__desc-7
+						.performance-xl__desc.performance-xl__desc-7(data-scroll)
 							span Светодиодный индикатор заряда
-						.performance-xl__desc.performance-xl__desc-8
+						.performance-xl__desc.performance-xl__desc-8(data-scroll)
 							span Micro-USB разъем для зарядки аккумулятора
 
 
@@ -72,10 +74,10 @@ mixin performance()
 								span Светодиодный индикатор заряда
 							li.performance__definitions.performance__definitions--right
 								span Micro-USB разъем для зарядки аккумулятора
-			h2.performance__title-tech Технические характеристики
+			h2.performance__title-tech(data-scroll) Технические характеристики
 			.performance__tech-inner
 				.row.justify-content-xl-between
-					.col-md-6.col-xl-auto
+					.col-md-6.col-xl-auto.performance__tech(data-scroll)
 						.performance__row
 							span.performance__name Класс инструмента
 							strong.performance__value Профессиональный
@@ -89,7 +91,7 @@ mixin performance()
 						.performance__row.performance__row--last-md
 							span.performance__name Максимальный диаметр шурупов
 							strong.performance__value 5 мм
-					.col-md-6.col-xl-auto
+					.col-md-6.col-xl-auto.performance__tech(data-scroll)
 						.performance__row
 							span.performance__name Тип аккумулятора
 							strong.performance__value Li
