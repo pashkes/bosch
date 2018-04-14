@@ -2647,10 +2647,10 @@ html {
 .btn {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding: 9px 32px 14px 32px;
   width: 100%;
   border: 1px solid #ffffff;
-  vertical-align: top;
   text-decoration: none;
   background-color: transparent;
   color: #FFFFFF;
@@ -3817,24 +3817,17 @@ p {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; }
-    .features-more__bg-image img {
-      object-position: 30% 50%;
-      object-fit: cover;
-      height: 705px;
-      width: 100%; }
-      @media (min-width: 768px) {
-        .features-more__bg-image img {
-          object-position: 10% 0;
-          object-fit: cover;
-          height: 1175px;
-          position: absolute;
-          top: -282px; } }
-      @media (min-width: 1344px) {
-        .features-more__bg-image img {
-          object-position: -5% -6%;
-          height: 1499px;
-          top: -339px; } }
+    left: 0;
+    background: url(../img/content/man.jpg) 30% 50% no-repeat;
+    background-size: auto 705px; }
+    @media (min-width: 768px) {
+      .features-more__bg-image {
+        background-position: 10% -282px;
+        background-size: auto 1175px; } }
+    @media (min-width: 1344px) {
+      .features-more__bg-image {
+        background-position: -5% -400px;
+        background-size: auto 1499px; } }
   @media (min-width: 768px) {
     .features-more__list {
       padding-left: 19px; } }
@@ -3928,10 +3921,12 @@ p {
         transform: translateY(70px);
         transition: all .5s ease; } }
   .in-complect__togle {
+    position: relative;
     margin-top: 25px;
     display: flex;
     width: 100%;
-    justify-content: center; }
+    justify-content: center;
+    z-index: 1; }
     @media (min-width: 1344px) {
       .in-complect__togle {
         opacity: 0;
@@ -4325,4 +4320,4 @@ p {
 
 .visible {
   opacity: 1.0 !important;
-  transform: none !important; }
+  transform: translate(0, 0); }

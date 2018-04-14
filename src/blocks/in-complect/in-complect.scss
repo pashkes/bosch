@@ -40,10 +40,12 @@
 		}
 	}
 	&__togle {
+		position:relative;
 		margin-top: 25px;
 		display: flex;
 		width: 100%;
 		justify-content: center;
+		z-index: 1;
 		@media(min-width: $screen-xl) {
 			opacity: 0;
 			transform: translateY(70px);

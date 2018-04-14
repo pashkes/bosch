@@ -16,18 +16,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 		once: true
 	}, document.body, window);
-
+	var player;
 	var scope = {};
 	trigger.callScope = scope;
 	scope.playVideoReview = function () {
 		onYouTubeIframeAPIReady();
+		videoReviewMute();
 	};
 	scope.stopVideoReview = function () {
 		stopVideo();
 	};
 
-	;
-	var player;
 
 	function onYouTubeIframeAPIReady () {
 		player = new YT.Player('video-review', {
@@ -40,6 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
+	var videoReviewMute = function () {
+		player.mute();
+	};
+
+	function stopVideo () {
+		player.stopVideo();
+		console.log('tes');
+	}
 
 	function onPlayerReadyPromo (event) {
 		event.target.playVideo();
@@ -74,3 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		stopVideoPromo();
 	});
 });
+(function () {
+	var rellax = new Rellax('.rellax');
+})();

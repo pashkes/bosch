@@ -51,12 +51,12 @@ $(function () {
 	});
 });
 
-// .features-nore scripts goes here 
+// .footer scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .footer scripts goes here 
+// .features-nore scripts goes here 
 
 /*$(function() {
 	
@@ -124,7 +124,6 @@ $(function() {
 	$('.js-reviews-slider').slick({
 		prevArrow: $('.js-slider-arrow-prev'),
 		nextArrow: $('.js-slider-arrow-next'),
-		infinite: false,
 		responsive: [{
 			breakpoint: 1343,
 			settings: {
@@ -153,18 +152,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 		once: true
 	}, document.body, window);
-
+	var player;
 	var scope = {};
 	trigger.callScope = scope;
 	scope.playVideoReview = function () {
 		onYouTubeIframeAPIReady();
+		videoReviewMute();
 	};
 	scope.stopVideoReview = function () {
 		stopVideo();
 	};
 
-	;
-	var player;
 
 	function onYouTubeIframeAPIReady () {
 		player = new YT.Player('video-review', {
@@ -177,6 +175,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
+	var videoReviewMute = function () {
+		player.mute();
+	};
+
+	function stopVideo () {
+		player.stopVideo();
+		console.log('tes');
+	}
 
 	function onPlayerReadyPromo (event) {
 		event.target.playVideo();
@@ -211,3 +217,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		stopVideoPromo();
 	});
 });
+(function () {
+	var rellax = new Rellax('.rellax');
+})();
