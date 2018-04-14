@@ -19,15 +19,11 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background: url(../img/content/man.jpg) 30% 50% no-repeat;
-		background-size: auto 705px;
+		background: url(../img/content/man.jpg) center 40% no-repeat;
+		background-size: cover;
 		@media (min-width: $screen-md) {
-			background-position: 10% -282px;
-			background-size: auto 1175px;
 		}
 		@media(min-width: $screen-xl) {
-			background-position: -5% -400px;
-			background-size: auto 1499px;
 		}
 	}
 	&__list {

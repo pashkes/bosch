@@ -3054,6 +3054,7 @@ p {
         margin-top: -24px; } }
     @media (min-width: 1344px) {
       .promo__title {
+        opacity: 0;
         transform: translateY(-30px);
         transition: all .6s ease-out; } }
   .promo__psevdo-logo {
@@ -3818,16 +3819,8 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(../img/content/man.jpg) 30% 50% no-repeat;
-    background-size: auto 705px; }
-    @media (min-width: 768px) {
-      .features-more__bg-image {
-        background-position: 10% -282px;
-        background-size: auto 1175px; } }
-    @media (min-width: 1344px) {
-      .features-more__bg-image {
-        background-position: -5% -400px;
-        background-size: auto 1499px; } }
+    background: url(../img/content/man.jpg) center 40% no-repeat;
+    background-size: cover; }
   @media (min-width: 768px) {
     .features-more__list {
       padding-left: 19px; } }

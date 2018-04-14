@@ -1,9 +1,9 @@
+
 // .about-company scripts goes here 
 
 /*$(function() {
 	
 });*/
-
 (function () {
 	$('.js-demo-slider').slick({
 		arrows: false,
@@ -51,12 +51,12 @@ $(function () {
 	});
 });
 
-// .footer scripts goes here 
+// .features-nore scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .features-nore scripts goes here 
+// .footer scripts goes here 
 
 /*$(function() {
 	
