@@ -10,7 +10,7 @@
 		padding-bottom: 111px;
 	}
 	@media(min-width: $screen-xl) {
-		padding-bottom: 71px;
+		padding-bottom: 94px;
 	}
 	&::after {
 		top: 16px;
@@ -35,12 +35,20 @@
 	&__header {
 		transition: .2s ease;
 		.yandex-btn {
-			padding: 15px 32px 15px 56px;
+			padding: 0;
+			width: 36px;
+			height: 36px;
 			margin-bottom: 0;
 			font-size: 0;
 			opacity: 0;
 			visibility: hidden;
 			transition: .2s ease;
+			svg {
+				left: 50%;
+				@media (min-width: $screen-md) {
+				    left: 36px;
+				}
+			}
 			&::before {
 				left: 50%;
 				@media (min-width: $screen-md) {
@@ -48,6 +56,8 @@
 				}
 			}
 			@media (min-width: $screen-md) {
+				width: auto;
+				height: auto;
 				font-size: 16px;
 				padding: 11px 32px 16px 56px;
 			}
@@ -120,7 +130,7 @@
 		z-index: 2;
 		@media (min-width: $screen-md) {
 			max-width: 100%;
-			margin-top: -25px;
+			margin-top: -24px;
 		}
 	}
 
@@ -133,8 +143,10 @@
 			width: 100%;
 		}
 		@media(min-width: $screen-xl) {
-			margin-top: -62px;
+			margin-top: -34px;
+			margin-bottom: 6px;
 			padding-top: 0;
+			max-width: 408px;
 		}
 	}
 	&__btn {

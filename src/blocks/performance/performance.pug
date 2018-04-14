@@ -6,22 +6,61 @@ mixin performance()
 				| Bosch GO — первая в мире смарт-отвертка с технологией Push & Go. Для старта работы достаточно
 				| нажать на шуруп. Электронная муфта E-Clutch регулирует крутящий момент
 				| и автоматически останавливает работу при завершении.
+			.performance-xl
+				.performance-xl__row.performance-xl__row--top
+					.performance-xl__row-inner
+						.performance-xl__desc.performance-xl__desc-1
+							span 1/4” HEX Держатель бит
+						.performance-xl__desc.performance-xl__desc-2
+							span Встроенный аккумулятор (1.5 Ач) с системой защиты элементов питания (ECP)
+						.performance-xl__desc.performance-xl__desc-3
+							span Электронная муфта E-Clutch для регулировки крутящего момента
+				.performance-xl__img
+					.performance-xl__top-half
+						picture
+							source(media="(min-width: 1344px)" srcset="img/half-grey-xl.png")
+							img.performance__img(src="img/half-grey.png")
+					.performance-xl__bottom-half
+						picture
+							source(media="(min-width: 1344px)" srcset="img/vertical-half-color-zercal-xl.png")
+							img.performance__img(src="img/vertical-half-color.png")
+				.performance-xl__row.performance-xl__row--bottom
+					.performance-xl__row-inner
+						.performance-xl__desc.performance-xl__desc-4
+							span Включение нажатием
+						.performance-xl__desc.performance-xl__desc-5
+							span Удобный прорезиненый корпус
+						.performance-xl__desc.performance-xl__desc-6
+							span Переключатель реверса. Три режима работы: вперед, ручной режим, назад
+						.performance-xl__desc.performance-xl__desc-7
+							span Светодиодный индикатор заряда
+						.performance-xl__desc.performance-xl__desc-8
+							span Micro-USB разъем для зарядки аккумулятора
+
+
+
 			ul.performance__demo.js-performance-slider-mobile
 				li
 					.performance__half.performance__half--first
 						ul.performance__list.performance__list--first-half
 							li.performance__definitions.performance__definitions--left
-								span 1/4” HEX Держатель бит
+								span 1/4” HEX Держатель битc
 							li.performance__definitions.performance__definitions--left
 								span Встроенный аккумулятор (1.5 Ач) с системой защиты элементов питания (ECP)
 							li.performance__definitions.performance__definitions--left
 								span Электронная муфта E-Clutch для регулировки крутящего момента
 						.performance__photo-inner.performance__photo-inner--right
-							img.performance__img(src="img/half-grey.png" width="80" height="804")
+							picture
+								//source(media="(min-width: 1344px)" srcset="img/half-grey-xl.png")
+								source(media="(min-width: 768px)" srcset="img/half-grey-sm.png")
+								img.performance__img(src="img/half-grey.png" width="80" height="804")
 				li
 					.performance__half.performance__half--second
 						.performance__photo-inner.performance__photo-inner--left
-							img.performance__img(src="img/vertical-half-color.png" width="82" height="804")
+							picture
+								source(media="(min-width: 1344px)" srcset="img/vertical-half-color-zercal-xl.png")
+								source(media="(min-width: 768px)" srcset="img/vertical-half-color-zercal.png")
+								img.performance__img(src="img/vertical-half-color.png" width="82" height="804")
 						ul.performance__list.performance__list--second-half
 							li.performance__definitions.performance__definitions--right
 								span Включение нажатием

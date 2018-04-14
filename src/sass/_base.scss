@@ -243,6 +243,10 @@ p {
 		width: 297px;
 		margin-bottom: 0;
 	}
+	@media(min-width: $screen-xl) {
+		font-size: 16px;
+		padding: 10px 20px 16px 64px;
+	}
 	svg {
 		position: absolute;
 		top: 50%;
@@ -263,5 +267,5 @@ p {
 	background-color: rgba(#0a1926, .9);
 }
 .modal-backdrop.show {
-	opacity: .6;
+	opacity: .9;
 }

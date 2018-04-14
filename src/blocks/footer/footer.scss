@@ -11,8 +11,13 @@
 		text-align: left;
 	}
 	@media(min-width: $screen-xl) {
-		padding-top: 51px;
+		padding-top: 43px;
 		padding-bottom: 33px;
+	}
+	&__btn {
+		@media(min-width: $screen-xl) {
+		    margin-left: 80px;
+		}
 	}
 	&::before {
 		content: '';
@@ -34,7 +39,7 @@
 		}
 		@media(min-width: $screen-xl) {
 			padding-top: 0;
-			margin-bottom: 0;
+			margin-bottom: 10px;
 		}
 	}
 	&__copy {
@@ -54,7 +59,7 @@
 	margin-left: -8px;
 	flex-wrap: wrap;
 	@media (min-width: $screen-md) {
-		margin-top: -12px;
+		margin-top: -30px;
 	}
 	@media(min-width: $screen-xl) {
 		margin-top: 0;
@@ -72,7 +77,10 @@
 		height: 48px;
 		border-radius: 50%;
 		border: 1px solid #005691;
-		transition: .2s easy-in;
+		transition: .2s ease-in;
+		svg {
+			transition: .2s ease-in;
+		}
 		&--facebook {
 			svg {
 				width: 29px;

@@ -32,6 +32,7 @@
 		text-align: center;
 	}
 	&__togle {
+		margin-top: 25px;
 		display: flex;
 		width: 100%;
 		justify-content: center;
@@ -71,7 +72,7 @@
 			width: 6px;
 			height: 6px;
 			border-radius: 50%;
-			bottom: 4px;
+			bottom: 6px;
 			left: 0;
 			background-color: #005691;
 		}
