@@ -3291,10 +3291,14 @@ p {
   position: static;
 }
 
+.promo-video__header {
+  position: relative;
+}
+
 .promo-video__close {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 0;
+  top: -50px;
   border: none;
   background-color: transparent;
   width: 40px;
@@ -3309,6 +3313,9 @@ p {
   width: 100%;
   height: 100%;
   fill: #fff;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .promo-video__close:hover svg {
@@ -5542,6 +5549,10 @@ p {
     padding-right: 95px;
     padding-left: 95px;
     margin: 1.75rem auto;
+  }
+
+  .promo-video__close {
+    right: -50px;
   }
 }
 
