@@ -1697,7 +1697,7 @@ html {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  padding: 9px 32px 14px 32px;
+  padding: 11px 32px 12px 32px;
   width: 100%;
   border: 1px solid #ffffff;
   text-decoration: none;
@@ -3096,7 +3096,7 @@ p {
 
 .dilers__more {
   font-size: 16px;
-  padding: 6px 32px 10px 32px;
+  padding: 8px 32px 8px 32px;
 }
 
 .footer {
@@ -5056,7 +5056,8 @@ p {
     width: auto;
     height: auto;
     font-size: 16px;
-    padding: 11px 32px 16px 56px;
+    padding: 0px 32px 1px 56px;
+    line-height: 49px;
   }
 
   .promo__logo {
@@ -7247,7 +7248,7 @@ p {
 
   .yandex-btn {
     font-size: 16px;
-    padding: 10px 20px 15px 64px;
+    padding: 12px 20px 13px 64px;
   }
 
   .promo {
