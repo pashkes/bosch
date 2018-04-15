@@ -2022,34 +2022,33 @@ p {
 }
 
 .parallax {
-  -webkit-perspective: 1px;
-          perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
 }
 
 .parallax__layer {
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
-  left: 0;
 }
 
 .parallax__layer--base {
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .parallax__layer--back {
   -webkit-transform: translateZ(-1px);
-          transform: translateZ(-1px);
+  transform: translateZ(-1px);
 }
 
-.parallax-window {
-  min-height: 400px;
-  background: transparent;
+.parallax__layer {
+  padding: 100vh 0;
 }
 
 .promo {
@@ -2855,12 +2854,34 @@ p {
   overflow: hidden;
 }
 
-.features-more__bg-image {
+.features-more__bg {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features-more__parallax {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features-more__bg-image {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   background: url(../img/content/man.jpg) center 40% no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -7534,6 +7555,13 @@ p {
   .features-more {
     padding-top: 173px;
     padding-bottom: 155px;
+  }
+
+  .features-more__bg-image {
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+            transform: translateY(50%);
+    height: 170vh;
   }
 
   .features-more__item {

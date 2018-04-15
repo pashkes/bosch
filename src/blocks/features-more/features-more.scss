@@ -13,17 +13,29 @@
 		padding-top: 173px;
 		padding-bottom: 155px;
 	}
-	&__bg-image {
+	&__bg {
 		position: absolute;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
+		display: flex;
+	}
+	&__parallax {
+		flex-grow: 1;
+		display: flex;
+	}
+	&__bg-image {
+		flex-grow: 1;
 		background: url(../img/content/man.jpg) center 40% no-repeat;
 		background-size: cover;
 		transform: translate(19%, 17%) scale(1.5);
 		@media (min-width: $screen-md) {
 			transform: none;
+		}
+		@media(min-width: $screen-xl) {
+			transform: translateY(50%);
+			height: 170vh;
 		}
 	}
 	&__list {
