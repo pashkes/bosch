@@ -21,11 +21,11 @@ mixin performance()
 					.performance-xl__top-half
 						picture
 							source(media="(min-width: 1344px)" srcset="img/half-grey-xl.png")
-							img.performance__img(src="img/half-grey.png")
+							img.performance__img(src="img/half-grey.png" alt="Половинка отвертки")
 					.performance-xl__bottom-half
 						picture
 							source(media="(min-width: 1344px)" srcset="img/vertical-half-color-zercal-xl.png")
-							img.performance__img(src="img/vertical-half-color.png")
+							img.performance__img(src="img/vertical-half-color.png" alt="Половинка отвертки")
 				.performance-xl__row.performance-xl__row--bottom
 					.performance-xl__row-inner
 						.performance-xl__desc.performance-xl__desc-4(data-scroll)
@@ -53,16 +53,14 @@ mixin performance()
 								span Электронная муфта E-Clutch для регулировки крутящего момента
 						.performance__photo-inner.performance__photo-inner--right
 							picture
-								//source(media="(min-width: 1344px)" srcset="img/half-grey-xl.png")
 								source(media="(min-width: 768px)" srcset="img/half-grey-sm.png")
-								img.performance__img(src="img/half-grey.png" width="80" height="804")
+								img.performance__img.lazyload.blur-up(data-src="img/half-grey.png" alt="Половинка отвертки" width="80" height="804")
 				li
 					.performance__half.performance__half--second
 						.performance__photo-inner.performance__photo-inner--left
 							picture
-								source(media="(min-width: 1344px)" srcset="img/vertical-half-color-zercal-xl.png")
 								source(media="(min-width: 768px)" srcset="img/vertical-half-color-zercal.png")
-								img.performance__img(src="img/vertical-half-color.png" width="82" height="804")
+								img.performance__img.lazyload.blur-up(data-src="img/vertical-half-color.png" alt="Половинка отвертки" width="82" height="804")
 						ul.performance__list.performance__list--second-half
 							li.performance__definitions.performance__definitions--right
 								span Включение нажатием

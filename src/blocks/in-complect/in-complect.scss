@@ -23,7 +23,7 @@
 		@media(min-width: $screen-xl) {
 			margin-top: 92px;
 			opacity: 0;
-			transform: translateY(70px);
+			transform: translateY(-70px);
 			transition: all .5s ease .35s;
 		}
 	}
@@ -35,7 +35,7 @@
 		text-align: center;
 		@media(min-width: $screen-xl) {
 			opacity: 0;
-			transform: translateY(70px);
+			transform: translateY(-40px);
 			transition: all .5s ease;
 		}
 	}
@@ -48,7 +48,7 @@
 		z-index: 1;
 		@media(min-width: $screen-xl) {
 			opacity: 0;
-			transform: translateY(70px);
+			transform: translateY(-40px);
 			transition: all .5s ease;
 		}
 	}
@@ -60,7 +60,7 @@
 		padding: 13px 10px 14px 10px;
 		@media (min-width: $screen-md) {
 			max-width: 243px;
-			padding: 13px 32px 14px 32px;
+			padding: 12px 32px 16px 32px;
 		}
 	}
 

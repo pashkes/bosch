@@ -2,3 +2,8 @@
 	opacity: 1.0 !important;
 	transform: translate(0,0);
 }
+@media (max-width: 1344px) {
+	.rellax {
+		transform: none !important;
+	}
+}

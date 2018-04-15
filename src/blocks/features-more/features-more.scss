@@ -2,7 +2,7 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
 
 .features-more {
-	position:relative;
+	position: relative;
 	padding-top: 40px;
 	overflow: hidden;
 	@media (min-width: $screen-md) {
@@ -21,9 +21,9 @@
 		left: 0;
 		background: url(../img/content/man.jpg) center 40% no-repeat;
 		background-size: cover;
+		transform: translate(19%, 17%) scale(1.5);
 		@media (min-width: $screen-md) {
-		}
-		@media(min-width: $screen-xl) {
+			transform: none;
 		}
 	}
 	&__list {
@@ -34,17 +34,40 @@
 	&__item {
 		margin-bottom: 30px;
 		max-width: 200px;
+		&:nth-child(1) {
+			img {
+				max-width: 57px;
+			}
+		}
+		&:nth-child(2) {
+			img {
+				max-width: 56px;
+			}
+		}
+		&:nth-child(3) {
+			img {
+				max-width: 69px;
+			}
+		}
 		@media (min-width: $screen-md) {
 			display: flex;
 			align-items: center;
 			max-width: 380px;
 			margin-bottom: 45px;
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				img {
+					max-width: 100%;
+				}
+			}
+
 		}
 		@media(min-width: $screen-xl) {
 			margin-bottom: 46px;
 			max-width: 420px;
 			opacity: 0;
-			transform: translateY(40px);
+			transform: translateY(-40px);
 			&:nth-child(1) {
 				transition: all .5s ease;
 			}

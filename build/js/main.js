@@ -1,4 +1,3 @@
-
 // .about-company scripts goes here 
 
 /*$(function() {
@@ -26,6 +25,7 @@
 			}]
 	});
 })();
+
 $(function () {
 	$('.js-dilers-slider').slick({
 		mobileFirst: true,
@@ -134,12 +134,12 @@ $(function() {
 	});
 
 });
-// (function () {
-//   $('.js-sticky-header').stick_in_parent({
-//     parent: $('body'),
-//     sticky_class: 'show'
-//   });
-// })();
+(function () {
+  $('.js-sticky-header').stick_in_parent({
+    parent: $('body'),
+    sticky_class: 'show'
+  });
+})();
 document.addEventListener('DOMContentLoaded', function () {
 	var trigger = new ScrollTrigger({
 		toggle: {
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 		offset: {
 			x: 0,
-			y: 80
+			y: 200
 		},
 		once: true
 	}, document.body, window);
