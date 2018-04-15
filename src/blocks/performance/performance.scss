@@ -464,10 +464,10 @@
 	}
 	&__full {
 		position: absolute;
-		top: 56.1%;
-		left: 50.1%;
+		top: 67.8%;
+		left: 49.3%;
 		transform: translate(-50%, -50%);
-		width: 929px;
+		width: 999px;
 		height: 183px;
 		z-index: 1;
 	}
@@ -479,11 +479,11 @@
 		background-position:  0 bottom;
 		background-repeat:  no-repeat;
 		z-index: 2;
-		min-height: 180px;
+		min-height: 250px;
 		will-change: min-height;
 		transition: min-height 1.6s ease 1.2s;
 		&.visible {
-			min-height: 90px;
+			min-height: 112px;
 		}
 	}
 	&__img {
