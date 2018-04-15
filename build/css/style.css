@@ -1974,7 +1974,7 @@ p {
   bottom: 0;
   top: 0;
   left: 0;
-  background: url(../../img/pattern.png) 0 0 repeat;
+  background: url(../img/pattern.png) 0 0 repeat;
   opacity: .5;
 }
 
@@ -2072,7 +2072,7 @@ p {
   left: 0;
   right: 0;
   top: 0;
-  background: url(../../img/gradient.png) left center no-repeat;
+  background: url(../img/gradient.png) left center no-repeat;
   -webkit-background-size: 100% 16px;
           background-size: 100% 16px;
 }
