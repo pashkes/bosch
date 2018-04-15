@@ -1,9 +1,9 @@
-
 // .about-company scripts goes here 
 
 /*$(function() {
 	
 });*/
+
 (function () {
 	$('.js-demo-slider').slick({
 		arrows: false,
