@@ -479,11 +479,11 @@
 		background-position:  0 bottom;
 		background-repeat:  no-repeat;
 		z-index: 2;
-		height: 180px;
-		will-change: height;
-		transition: height 1.6s ease 1.2s;
+		min-height: 180px;
+		will-change: min-height;
+		transition: min-height 1.6s ease 1.2s;
 		&.visible {
-			height: 90px;
+			min-height: 90px;
 		}
 	}
 	&__img {

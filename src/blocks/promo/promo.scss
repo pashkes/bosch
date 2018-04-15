@@ -168,7 +168,7 @@
 			margin-top: -24px;
 			opacity: 0;
 			transform: translateY(-40px);
-			transition: all .4s ease-out .8s;
+			transition: transform .4s ease-out .8s, opacity .4s ease-out .8s, background-color .2s ease;
 		}
 	}
 }

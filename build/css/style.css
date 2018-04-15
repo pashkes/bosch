@@ -2567,15 +2567,15 @@ p {
   background-position: 0 bottom;
   background-repeat: no-repeat;
   z-index: 2;
-  height: 180px;
-  will-change: height;
-  -webkit-transition: height 1.6s ease 1.2s;
-  -o-transition: height 1.6s ease 1.2s;
-  transition: height 1.6s ease 1.2s;
+  min-height: 180px;
+  will-change: min-height;
+  -webkit-transition: min-height 1.6s ease 1.2s;
+  -o-transition: min-height 1.6s ease 1.2s;
+  transition: min-height 1.6s ease 1.2s;
 }
 
 .performance-xl__full-inner.visible {
-  height: 90px;
+  min-height: 90px;
 }
 
 .performance-xl__img {
@@ -3192,6 +3192,8 @@ p {
 .social__link--twitter svg {
   width: 24px;
   height: 24px;
+  margin-left: 2px;
+  margin-top: 2px;
 }
 
 .social__link--bosch {
@@ -5462,6 +5464,7 @@ p {
   .dilers__slider {
     position: relative;
     border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
   }
 
   .dilers__slider::before {
@@ -5477,6 +5480,7 @@ p {
   .dilers__card {
     padding: 20px 31px 32px;
     border-left: none;
+    border-bottom: none;
   }
 
   .dilers .slick-dots {
@@ -7295,9 +7299,11 @@ p {
     -webkit-transform: translateY(-40px);
         -ms-transform: translateY(-40px);
             transform: translateY(-40px);
-    -webkit-transition: all .4s ease-out .8s;
-    -o-transition: all .4s ease-out .8s;
-    transition: all .4s ease-out .8s;
+    -webkit-transition: opacity .4s ease-out .8s, background-color .2s ease, -webkit-transform .4s ease-out .8s;
+    transition: opacity .4s ease-out .8s, background-color .2s ease, -webkit-transform .4s ease-out .8s;
+    -o-transition: transform .4s ease-out .8s, opacity .4s ease-out .8s, background-color .2s ease;
+    transition: transform .4s ease-out .8s, opacity .4s ease-out .8s, background-color .2s ease;
+    transition: transform .4s ease-out .8s, opacity .4s ease-out .8s, background-color .2s ease, -webkit-transform .4s ease-out .8s;
   }
 
   .features {

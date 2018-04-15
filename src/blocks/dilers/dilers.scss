@@ -31,6 +31,7 @@
 		@media (min-width: $screen-md) {
 			position:relative;
 			border-left: 1px solid #e8e8e8;
+			border-bottom: 1px solid #e8e8e8;
 			&::before {
 				content: '';
 				position: absolute;
@@ -48,6 +49,7 @@
 		@media (min-width: $screen-md) {
 			padding: 20px 31px 32px;
 			border-left: none;
+			border-bottom: none;
 		}
 	}
 	&__name {
