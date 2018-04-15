@@ -1,9 +1,12 @@
-.visible {
-	opacity: 1.0 !important;
-	transform: translate(0,0);
-}
 @media (max-width: 1344px) {
 	.rellax {
 		transform: none !important;
+	}
+}
+
+@media(min-width: $screen-xl) {
+	.visible {
+		opacity: 1.0 !important;
+		transform: translate(0,0);
 	}
 }

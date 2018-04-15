@@ -18,8 +18,7 @@ mixin promo()
     h1.promo__title(data-scroll) Эволюция твоего инструмента
     .promo__hand(data-scroll)
       picture
-        //source(srcset="img/hand.webp" type="image/webp" classs="rellax" data-rellax-speed="4")
-        img.rellax(src="img/hand.png" data-rellax-speed="4" alt="Отвертка")
+        img.rellax(src="img/hand-xs.png" srcset="img/hand-xs.png 2x" data-rellax-speed="4" alt="Отвертка")
     .container
       button.promo__btn.btn(type="button" data-toggle="modal" data-target="#promo-video" data-scroll) Смотреть промо-ролик
 

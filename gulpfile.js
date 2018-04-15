@@ -93,13 +93,13 @@ gulp.task('sass', function () {
                 message: err.message
             };
         }))
-       /* .pipe(postcss([
+       .pipe(postcss([
           require('postcss-flexbugs-fixes'),
           require('postcss-inline-svg')
         ]))
 			  .pipe(gcmq())
         .pipe(autoprefixer({browsers: ['last 10 versions']}))
-        .pipe(debug({title: 'обработано less файлов'}))*/
+        .pipe(debug({title: 'обработано less файлов'}))
         .pipe(gulp.dest(PATH.BUILD.CSS))
         .pipe(browserSync.stream());
 });
