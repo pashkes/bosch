@@ -39,6 +39,7 @@
 			padding: 0;
 			width: 36px;
 			height: 36px;
+			border: none;
 			margin-bottom: 0;
 			font-size: 0;
 			opacity: 0;
@@ -59,6 +60,7 @@
 			@media (min-width: $screen-md) {
 				width: auto;
 				height: auto;
+				border: 1px solid #005691;
 				font-size: 16px;
 				padding: 0px 32px 1px 56px;
 				line-height: 49px;
@@ -103,8 +105,8 @@
 		@media(min-width: $screen-xl) {
 			margin-top: -178px;
 			opacity: 0;
-			transform: translateX(100px);
-			transition: all .7s ease-out .3s;
+			transform: translateX(800px);
+			transition: all 1.7s ease-out .3s;
 		}
 		img {
 			object-fit: cover;
@@ -168,8 +170,8 @@
 		@media(min-width: $screen-xl) {
 			margin-top: -24px;
 			opacity: 0;
-			transform: translateY(-40px);
-			transition: transform .4s ease-out .8s, opacity .4s ease-out .8s, background-color .2s ease;
+			transform: translateY(40px);
+			transition: transform .4s ease-in 2s, opacity .4s ease-in 2s, background-color .2s ease;
 		}
 	}
 }

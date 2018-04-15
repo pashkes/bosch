@@ -2095,6 +2095,7 @@ p {
   padding: 0;
   width: 36px;
   height: 36px;
+  border: none;
   margin-bottom: 0;
   font-size: 0;
   opacity: 0;
@@ -3113,7 +3114,7 @@ p {
 
 .dilers__more {
   font-size: 16px;
-  padding: 8px 32px 8px 32px;
+  padding: 6px 32px 8px 32px;
 }
 
 .footer {
@@ -5079,6 +5080,7 @@ p {
   .promo__header .yandex-btn {
     width: auto;
     height: auto;
+    border: 1px solid #005691;
     font-size: 16px;
     padding: 0px 32px 1px 56px;
     line-height: 49px;
@@ -7295,12 +7297,12 @@ p {
   .promo__hand {
     margin-top: -178px;
     opacity: 0;
-    -webkit-transform: translateX(100px);
-        -ms-transform: translateX(100px);
-            transform: translateX(100px);
-    -webkit-transition: all .7s ease-out .3s;
-    -o-transition: all .7s ease-out .3s;
-    transition: all .7s ease-out .3s;
+    -webkit-transform: translateX(800px);
+        -ms-transform: translateX(800px);
+            transform: translateX(800px);
+    -webkit-transition: all 1.7s ease-out .3s;
+    -o-transition: all 1.7s ease-out .3s;
+    transition: all 1.7s ease-out .3s;
   }
 
   .promo__hand img {
@@ -7329,14 +7331,14 @@ p {
   .promo__btn {
     margin-top: -24px;
     opacity: 0;
-    -webkit-transform: translateY(-40px);
-        -ms-transform: translateY(-40px);
-            transform: translateY(-40px);
-    -webkit-transition: opacity .4s ease-out .8s, background-color .2s ease, -webkit-transform .4s ease-out .8s;
-    transition: opacity .4s ease-out .8s, background-color .2s ease, -webkit-transform .4s ease-out .8s;
-    -o-transition: transform .4s ease-out .8s, opacity .4s ease-out .8s, background-color .2s ease;
-    transition: transform .4s ease-out .8s, opacity .4s ease-out .8s, background-color .2s ease;
-    transition: transform .4s ease-out .8s, opacity .4s ease-out .8s, background-color .2s ease, -webkit-transform .4s ease-out .8s;
+    -webkit-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+            transform: translateY(40px);
+    -webkit-transition: opacity .4s ease-in 2s, background-color .2s ease, -webkit-transform .4s ease-in 2s;
+    transition: opacity .4s ease-in 2s, background-color .2s ease, -webkit-transform .4s ease-in 2s;
+    -o-transition: transform .4s ease-in 2s, opacity .4s ease-in 2s, background-color .2s ease;
+    transition: transform .4s ease-in 2s, opacity .4s ease-in 2s, background-color .2s ease;
+    transition: transform .4s ease-in 2s, opacity .4s ease-in 2s, background-color .2s ease, -webkit-transform .4s ease-in 2s;
   }
 
   .features {
@@ -7361,9 +7363,11 @@ p {
     -webkit-transform: translateY(-40px);
         -ms-transform: translateY(-40px);
             transform: translateY(-40px);
-    -webkit-transition: all .4s .4s;
-    -o-transition: all .4s .4s;
-    transition: all .4s .4s;
+    -webkit-transition: -webkit-transform .4s .4s;
+    transition: -webkit-transform .4s .4s;
+    -o-transition: transform .4s .4s;
+    transition: transform .4s .4s;
+    transition: transform .4s .4s, -webkit-transform .4s .4s;
   }
 
   .features__subtitle {
@@ -7572,7 +7576,7 @@ p {
     -webkit-transform: translateY(50%);
         -ms-transform: translateY(50%);
             transform: translateY(50%);
-    height: 150vh;
+    height: 190vh;
   }
 
   .features-more__item {
