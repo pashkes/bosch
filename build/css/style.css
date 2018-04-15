@@ -7561,7 +7561,7 @@ p {
     -webkit-transform: translateY(50%);
         -ms-transform: translateY(50%);
             transform: translateY(50%);
-    height: 170vh;
+    height: 150vh;
   }
 
   .features-more__item {
