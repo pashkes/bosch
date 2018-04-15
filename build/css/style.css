@@ -2509,10 +2509,6 @@ p {
   border-bottom: none;
 }
 
-.performance__row--last-md {
-  border-bottom: none;
-}
-
 .performance__name {
   max-width: 125px;
 }
@@ -5363,6 +5359,10 @@ p {
     padding-top: 12px;
     padding-bottom: 12px;
     min-height: 63px;
+  }
+
+  .performance__row--last-md {
+    border-bottom: none;
   }
 
   .performance__name {

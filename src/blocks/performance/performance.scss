@@ -424,7 +424,9 @@
 		}
 
 		&--last-md {
-			border-bottom: none;
+			@media (min-width: $screen-md) {
+				border-bottom: none;
+			}
 		}
 	}
 	&__name {
