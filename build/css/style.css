@@ -7580,7 +7580,7 @@ p {
     -webkit-transform: translateY(50%);
         -ms-transform: translateY(50%);
             transform: translateY(50%);
-    height: 190vh;
+    height: 170vh;
   }
 
   .features-more__item {
@@ -7777,6 +7777,15 @@ p {
   }
 }
 
+@media (min-width: 1500px) {
+  .features-more__bg-image {
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+            transform: translateY(50%);
+    height: 170vh;
+  }
+}
+
 @media (min-width: 1800px) {
   .promo__hand img {
     -o-object-position: -220% 0;
@@ -7784,7 +7793,7 @@ p {
   }
 }
 
-@media (max-width: 1344px) {
+@media (max-width: 1343px) {
   .rellax {
     -webkit-transform: none !important;
         -ms-transform: none !important;

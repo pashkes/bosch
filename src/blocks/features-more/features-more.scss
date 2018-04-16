@@ -35,7 +35,11 @@
 		}
 		@media(min-width: $screen-xl) {
 			transform: translateY(50%);
-			height: 190vh;
+			height: 170vh;
+		}
+		@media(min-width: 1500px) {
+			transform: translateY(50%);
+			height: 170vh;
 		}
 	}
 	&__list {
