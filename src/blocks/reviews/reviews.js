@@ -12,4 +12,7 @@ $(function() {
 		}]
 	});
 
+	$('.reviews__read-more').on('click', function () {
+		$(this).hide();
+	});
 });

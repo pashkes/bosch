@@ -1,5 +1,7 @@
 .promo {
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	padding-bottom: 24px;
 	text-align: center;
 	padding-top: 16px;
@@ -7,6 +9,7 @@
 	background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
 	background-image: -ms-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
 	overflow: hidden;
+	min-height: 100vh;
 	@media (min-width: $screen-md) {
 		padding-bottom: 111px;
 	}
@@ -36,33 +39,24 @@
 	&__header {
 		transition: .2s ease;
 		.yandex-btn {
-			padding: 0;
-			width: 36px;
-			height: 36px;
-			border: none;
+			padding: 11px 24px 11px 24px;
 			margin-bottom: 0;
-			font-size: 0;
+			font-size: 12px;
 			opacity: 0;
 			visibility: hidden;
 			transition: .2s ease;
 			svg {
-				left: 50%;
+				display: none;
 				@media (min-width: $screen-md) {
-					left: 36px;
-				}
-			}
-			&::before {
-				left: 50%;
-				@media (min-width: $screen-md) {
-					left: 36px;
+					display: block;
 				}
 			}
 			@media (min-width: $screen-md) {
 				width: auto;
 				height: auto;
 				border: 1px solid #005691;
-				font-size: 16px;
-				padding: 0px 32px 1px 56px;
+				font-size: 14px;
+				padding: 0 32px 1px 56px;
 				line-height: 49px;
 			}
 		}
@@ -82,7 +76,8 @@
 	}
 	&__logo {
 		max-width: 96px;
-		padding: 8px 6px 11px 11px;
+		width: 100%;
+		padding: 8px 0 11px 6px;
 		background-color: #fff;
 		@media (min-width: $screen-md) {
 			max-width: 193px;
@@ -92,12 +87,9 @@
 			max-width: 205px;
 			padding: 19px 12px 21px 23px;
 		}
-		img {
-			width: 100%;
-		}
 	}
 	&__hand {
-		margin-top: -160px;
+		margin-top: -50px;
 		@media (min-width: $screen-md) {
 			margin-top: -200px;
 			margin-bottom: 34px;
@@ -110,8 +102,8 @@
 		}
 		img {
 			object-fit: cover;
-			min-height: 390px;
-			object-position: 20% 0;
+			min-height: 185px;
+			object-position: -8% 0;
 			@media (min-width: $screen-sm) {
 				object-position: 0 0;
 			}

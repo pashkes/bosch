@@ -31,15 +31,19 @@
 		background-size: cover;
 		transform: translate(19%, 17%) scale(1.5);
 		@media (min-width: $screen-md) {
+			background-position-x: 0;
+			background-size: 135%;
 			transform: none;
 		}
 		@media(min-width: $screen-xl) {
+			background-position-x: center;
+			background-size: cover;
 			transform: translateY(50%);
 			height: 170vh;
 		}
 		@media(min-width: 1500px) {
 			transform: translateY(50%);
-			height: 170vh;
+			height: 185vh;
 		}
 	}
 	&__list {

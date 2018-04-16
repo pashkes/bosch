@@ -4,28 +4,6 @@
 	
 });*/
 
-(function () {
-	$('.js-demo-slider').slick({
-		arrows: false,
-		dots: true,
-		mobileFirst: true,
-		responsive: [{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
-			}
-		},
-			{
-				breakpoint: 1343,
-				settings: {
-					rows: 2,
-					slidesToShow: 2,
-					dots: false
-				}
-			}]
-	});
-})();
 $(function () {
 	$('.js-dilers-slider').slick({
 		mobileFirst: true,
@@ -50,6 +28,28 @@ $(function () {
 		]
 	});
 });
+(function () {
+	$('.js-demo-slider').slick({
+		arrows: false,
+		dots: true,
+		mobileFirst: true,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+			{
+				breakpoint: 1343,
+				settings: {
+					rows: 2,
+					slidesToShow: 2,
+					dots: false
+				}
+			}]
+	});
+})();
 
 // .features-nore scripts goes here 
 
@@ -133,6 +133,9 @@ $(function() {
 		}]
 	});
 
+	$('.reviews__read-more').on('click', function () {
+		$(this).hide();
+	});
 });
 (function () {
   $('.js-sticky-header').stick_in_parent({
@@ -148,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 		offset: {
 			x: 0,
-			y: 100
+			y: 0
 		},
 		once: true
 	}, document.body, window);

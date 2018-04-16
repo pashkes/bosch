@@ -25,13 +25,12 @@
           </div>
         </div>
       </header>
-      <div class="container"></div>
-      <picture><img class="promo__psevdo-logo" src="img/psevdo-logo.png" width="212" height="48" alt="Эволюция твоего инструмента" rel="preload" as="image"/></picture>
-      <h1 class="promo__title" data-scroll="data-scroll">Эволюция твоего инструмента</h1>
-      <div class="promo__hand" data-scroll="data-scroll">
-        <picture><img class="rellax" src="img/hand-xs.png" srcset="img/hand-xs.png 2x" data-rellax-speed="4" alt="Отвертка"/></picture>
-      </div>
       <div class="container">
+        <picture><img class="promo__psevdo-logo" src="img/psevdo-logo.png" width="212" height="48" alt="Эволюция твоего инструмента" rel="preload" as="image"/></picture>
+        <h1 class="promo__title" data-scroll="data-scroll">Эволюция твоего инструмента</h1>
+      </div>
+      <div class="promo__hand" data-scroll="data-scroll"><img class="rellax" src="img/hand.png" data-rellax-speed="4" alt="Отвертка"/></div>
+      <div class="container mt-auto">
         <button class="promo__btn btn" type="button" data-toggle="modal" data-target="#promo-video" data-scroll="data-scroll">Смотреть промо-ролик</button>
       </div>
     </div>
@@ -75,7 +74,7 @@
             </div>
             <div class="col-4 col-sm-3 col-xl-4">
               <div class="features__vertical-img">
-                <div class="features__img-inner"><img class="features__img rellax lazyload blur-up" data-src="img/vertical.png" alt="Отвертка Bosch" data-scroll="data-scroll" data-rellax-speed="5"/></div>
+                <div class="features__img-inner"><img class="features__img lazyload blur-up" data-src="img/vertical.png" alt="Отвертка Bosch" data-scroll="data-scroll"/></div>
               </div>
             </div>
           </div>
@@ -240,7 +239,6 @@
                   <li class="in-complect__item">Аккумуляторная отвертка Bosch GO</li>
                   <li class="in-complect__item">Комплект из 33 бит</li>
                   <li class="in-complect__item">Зарядное устроиство</li>
-                  <li class="in-complect__item">Зарядное устроиство</li>
                   <li class="in-complect__item">Пластиковый кейс</li>
                 </ul>
               </div>
@@ -258,7 +256,6 @@
                 <ul class="in-complect__has" data-scroll="data-scroll">
                   <li class="in-complect__item">Аккумуляторная отвертка Bosch GO</li>
                   <li class="in-complect__item">Комплект из 33 бит</li>
-                  <li class="in-complect__item">Зарядное устроиство</li>
                   <li class="in-complect__item">Зарядное устроиство</li>
                   <li class="in-complect__item">Пластиковый кейс</li>
                 </ul>
@@ -287,14 +284,14 @@
                   <div class="reviews__text" data-scroll="data-scroll">
                     <p>
                       Bosch GO не имеет выключателя ON / OFF, и единственным механизмом,
-                      на котором она работает, является ... «Нажатие», чтобы закрутить шуруп. Даже
-                      	в обратном режиме он использует тот же механизм,
-                      чтобы отвинтить шуруп. Крутящий момент (от 2,5 до 5Нм) может быть отрегулирован на 6 уровнях, и обороты —
-                      360 об/мин.
-                      <button class="reviews__read-more" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"/></svg>
-                        читать далее
-                      </button>
+                      на котором она работает, является ...
+                      <p class="collapse" id="review-1">
+                        «Нажатие», чтобы закрутить шуруп. Даже
+                         в обратном режиме он использует тот же механизм,
+                        чтобы отвинтить шуруп. Крутящий момент (от 2,5 до 5Нм) может быть отрегулирован на 6 уровнях, и обороты —
+                        360 об/мин.
+                      </p>
+                      <button class="reviews__read-more collapsed" type="button" data-toggle="collapse" data-target="#review-1" aria-expanded="false" aria-controls="review-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"/></svg><span>читать далее</span></button>
                     </p>
                   </div>
                 </div>
@@ -312,15 +309,15 @@
                   <div class="reviews__text" data-scroll="data-scroll">
                     <p>
                       Bosch GO не имеет выключателя ON / OFF, и единственным механизмом,
-                      на котором она работает, является ... «Нажатие», чтобы закрутить шуруп. Даже
+                      на котором она работает, является ...
+                    </p>
+                    <p class="collapse" id="review-2">
+                      «Нажатие», чтобы закрутить шуруп. Даже
                        в обратном режиме он использует тот же механизм,
                       чтобы отвинтить шуруп. Крутящий момент (от 2,5 до 5Нм) может быть отрегулирован на 6 уровнях, и обороты —
                       360 об/мин.
-                      <button class="reviews__read-more" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"/></svg>
-                        читать далее
-                      </button>
                     </p>
+                    <button class="reviews__read-more collapsed" type="button" data-toggle="collapse" data-target="#review-2" aria-expanded="false" aria-controls="review-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"/></svg><span>читать далее</span></button>
                   </div>
                 </div>
               </div>
@@ -374,7 +371,7 @@
             </ul>
           </div>
           <div class="col-12 col-md-6 col-xl-auto order-md-1"><img class="footer__logo" src="img/logo-lg.png" alt="Bosch"/>
-            <p class="footer__copy">&#169;2017 Роберт Бош OOO</p>
+            <p class="footer__copy">&#169;2018 Роберт Бош OOO</p>
           </div>
         </div>
       </div>

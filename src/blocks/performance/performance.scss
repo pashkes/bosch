@@ -6,6 +6,7 @@
 		padding-top: 34px;
 	}
 	@media(min-width: $screen-xl) {
+		padding-top: 72px;
 		padding-bottom: 91px;
 	}
 	&__title {
@@ -45,6 +46,7 @@
 	&__subtitle {
 		margin-bottom: 24px;
 		text-align: center;
+		font-weight: 300;
 		@media (min-width: $screen-md) {
 			max-width: 690px;
 			margin-bottom: 55px;
