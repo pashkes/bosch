@@ -57,10 +57,10 @@
 		border: none;
 		outline: 1px solid #005691;
 		max-width: 133px;
-		padding: 13px 10px 14px 10px;
+		padding: 0.8rem 9px 0.8rem 9px;
 		@media (min-width: $screen-md) {
 			max-width: 243px;
-			padding: 12px 32px 16px 32px;
+			padding: 14px 32px 14px 32px;
 		}
 	}
 
@@ -90,7 +90,7 @@
 			width: 6px;
 			height: 6px;
 			border-radius: 50%;
-			bottom: 4px;
+			bottom: 0.42rem;
 			left: 0;
 			background-color: #005691;
 		}

@@ -39,7 +39,7 @@
 	&__header {
 		transition: .2s ease;
 		.yandex-btn {
-			padding: 11px 24px 11px 24px;
+			padding: .5rem 10px .5rem 10px;
 			margin-bottom: 0;
 			font-size: 12px;
 			opacity: 0;
@@ -88,37 +88,31 @@
 			padding: 19px 12px 21px 23px;
 		}
 	}
-	&__hand {
-		margin-top: -50px;
+	&__inner {
+		position:relative;
+		display: flex;
+		flex-direction: column;
 		@media (min-width: $screen-md) {
-			margin-top: -200px;
-			margin-bottom: 34px;
+			min-height: 500px;
+		}
+	}
+	&__hand {
+		position: absolute;
+		top: 24.4%;
+		left: -39%;
+		width: 653px;
+		@media (min-width: $screen-md) {
+			top: 24.4%;
+			left: -26%;
+			width: 1323px;
 		}
 		@media(min-width: $screen-xl) {
-			margin-top: -178px;
+			top: 4.4%;
+			left: -27.8%;
+			width: 2013px;
 			opacity: 0;
 			transform: translateX(800px);
 			transition: all 1.7s ease-out .3s;
-		}
-		img {
-			object-fit: cover;
-			min-height: 185px;
-			object-position: -8% 0;
-			@media (min-width: $screen-sm) {
-				object-position: 0 0;
-			}
-			@media (min-width: $screen-md) {
-				object-position: 15% 0;
-				min-height: 655px;
-			}
-			@media(min-width: $screen-xl) {
-				min-height: 580px;
-				object-position: -7% 0;
-
-			}
-			@media (min-width: 1800px) {
-				object-position: -220% 0;
-			}
 		}
 	}
 	&__title {
@@ -154,13 +148,10 @@
 		}
 	}
 	&__btn {
-		margin-top: -7px;
 		@media (min-width: $screen-md) {
-			margin-top: 0;
 			max-width: 272px;
 		}
 		@media(min-width: $screen-xl) {
-			margin-top: -24px;
 			opacity: 0;
 			transform: translateY(40px);
 			transition: transform .4s ease-in 2s, opacity .4s ease-in 2s, background-color .2s ease;

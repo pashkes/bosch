@@ -5,14 +5,15 @@
 .btn {
 	position:relative;
 	display: inline-block;
-	vertical-align: top;
-	padding: 11px 32px 13px 32px;
+	vertical-align: middle;
+	padding: 0.7rem 32px 0.7rem 32px;
 	width: 100%;
 	border: 1px solid #ffffff;
 	text-decoration: none;
 	background-color: transparent;
 	color: #FFFFFF;
 	text-align: center;
+	line-height: inherit;
 	transition: .2s ease-in;
 	cursor: pointer;
 	z-index: 1;

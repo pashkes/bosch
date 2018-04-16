@@ -1699,14 +1699,15 @@ html {
 .btn {
   position: relative;
   display: inline-block;
-  vertical-align: top;
-  padding: 11px 32px 13px 32px;
+  vertical-align: middle;
+  padding: 0.7rem 32px 0.7rem 32px;
   width: 100%;
   border: 1px solid #ffffff;
   text-decoration: none;
   background-color: transparent;
   color: #FFFFFF;
   text-align: center;
+  line-height: inherit;
   -webkit-transition: .2s ease-in;
   -o-transition: .2s ease-in;
   transition: .2s ease-in;
@@ -1994,7 +1995,7 @@ p {
   position: relative;
   width: 100%;
   margin-bottom: 23px;
-  padding: 13px 32px 14px 56px;
+  padding: 14px 32px 14px 56px;
 }
 
 .yandex-btn svg {
@@ -2105,7 +2106,7 @@ p {
 }
 
 .promo__header .yandex-btn {
-  padding: 11px 24px 11px 24px;
+  padding: .5rem 10px .5rem 10px;
   margin-bottom: 0;
   font-size: 12px;
   opacity: 0;
@@ -2142,16 +2143,24 @@ p {
   background-color: #fff;
 }
 
-.promo__hand {
-  margin-top: -50px;
+.promo__inner {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.promo__hand img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  min-height: 185px;
-  -o-object-position: -8% 0;
-     object-position: -8% 0;
+.promo__hand {
+  position: absolute;
+  top: 24.4%;
+  left: -39%;
+  width: 653px;
 }
 
 .promo__title {
@@ -2165,10 +2174,6 @@ p {
 .promo__psevdo-logo {
   z-index: 2;
   padding-top: 20px;
-}
-
-.promo__btn {
-  margin-top: -7px;
 }
 
 .features {
@@ -2971,7 +2976,7 @@ p {
   border: none;
   outline: 1px solid #005691;
   max-width: 133px;
-  padding: 13px 10px 14px 10px;
+  padding: 0.8rem 9px 0.8rem 9px;
 }
 
 .in-complect__has {
@@ -2993,7 +2998,7 @@ p {
   height: 6px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  bottom: 4px;
+  bottom: 0.42rem;
   left: 0;
   background-color: #005691;
 }
@@ -3141,7 +3146,7 @@ p {
 }
 
 .dilers__more {
-  padding: 9px 32px 10px 32px;
+  padding: 10px 32px 10px 32px;
 }
 
 .footer {
@@ -3344,13 +3349,6 @@ p {
 
 .promo-video__close:hover svg {
   fill: #005691;
-}
-
-@media (min-width: 480px) {
-  .promo__hand img {
-    -o-object-position: 0 0;
-       object-position: 0 0;
-  }
 }
 
 @media (min-width: 768px) {
@@ -5114,15 +5112,14 @@ p {
     padding: 18px 11px 19px 23px;
   }
 
-  .promo__hand {
-    margin-top: -200px;
-    margin-bottom: 34px;
+  .promo__inner {
+    min-height: 500px;
   }
 
-  .promo__hand img {
-    -o-object-position: 15% 0;
-       object-position: 15% 0;
-    min-height: 655px;
+  .promo__hand {
+    top: 24.4%;
+    left: -26%;
+    width: 1323px;
   }
 
   .promo__title {
@@ -5137,7 +5134,6 @@ p {
   }
 
   .promo__btn {
-    margin-top: 0;
     max-width: 272px;
   }
 
@@ -5457,7 +5453,7 @@ p {
 
   .in-complect__toggle-slide {
     max-width: 243px;
-    padding: 12px 32px 16px 32px;
+    padding: 14px 32px 14px 32px;
   }
 
   .in-complect__has {
@@ -7317,7 +7313,9 @@ p {
   }
 
   .promo__hand {
-    margin-top: -178px;
+    top: 4.4%;
+    left: -27.8%;
+    width: 2013px;
     opacity: 0;
     -webkit-transform: translateX(800px);
         -ms-transform: translateX(800px);
@@ -7325,12 +7323,6 @@ p {
     -webkit-transition: all 1.7s ease-out .3s;
     -o-transition: all 1.7s ease-out .3s;
     transition: all 1.7s ease-out .3s;
-  }
-
-  .promo__hand img {
-    min-height: 580px;
-    -o-object-position: -7% 0;
-       object-position: -7% 0;
   }
 
   .promo__title {
@@ -7351,7 +7343,6 @@ p {
   }
 
   .promo__btn {
-    margin-top: -24px;
     opacity: 0;
     -webkit-transform: translateY(40px);
         -ms-transform: translateY(40px);
@@ -7385,9 +7376,9 @@ p {
     -webkit-transform: translateY(-40px);
         -ms-transform: translateY(-40px);
             transform: translateY(-40px);
-    -webkit-transition: all .4s .4s;
-    -o-transition: all .4s .4s;
-    transition: all .4s .4s;
+    -webkit-transition: all .4s .8s;
+    -o-transition: all .4s .8s;
+    transition: all .4s .8s;
   }
 
   .features__subtitle {
@@ -7398,9 +7389,9 @@ p {
     -webkit-transform: translateY(-40px);
         -ms-transform: translateY(-40px);
             transform: translateY(-40px);
-    -webkit-transition: all .4s .6s;
-    -o-transition: all .4s .6s;
-    transition: all .4s .6s;
+    -webkit-transition: all .4s 1s;
+    -o-transition: all .4s 1s;
+    transition: all .4s 1s;
   }
 
   .features__vertical-img img {
@@ -7426,27 +7417,27 @@ p {
     -webkit-transform: translateY(-40px);
         -ms-transform: translateY(-40px);
             transform: translateY(-40px);
-    -webkit-transition: all .4s .75s;
-    -o-transition: all .4s .75s;
-    transition: all .4s .75s;
+    -webkit-transition: all .4s 1.3s;
+    -o-transition: all .4s 1.3s;
+    transition: all .4s 1.3s;
   }
 
   .features__item-1 {
-    -webkit-transition: all .4s .75s;
-    -o-transition: all .4s .75s;
-    transition: all .4s .75s;
+    -webkit-transition: all .4s 1.5s;
+    -o-transition: all .4s 1.5s;
+    transition: all .4s 1.5s;
   }
 
   .features__item-2 {
-    -webkit-transition: all .4s .90s;
-    -o-transition: all .4s .90s;
-    transition: all .4s .90s;
+    -webkit-transition: all .4s 1.7s;
+    -o-transition: all .4s 1.7s;
+    transition: all .4s 1.7s;
   }
 
   .features__item-3 {
-    -webkit-transition: all .4s 1.05s;
-    -o-transition: all .4s 1.05s;
-    transition: all .4s 1.05s;
+    -webkit-transition: all .4s 1.9s;
+    -o-transition: all .4s 1.9s;
+    transition: all .4s 1.9s;
   }
 
   .demo {
@@ -7595,13 +7586,12 @@ p {
   }
 
   .features-more__bg-image {
-    background-position-x: center;
+    background-position: center top;
     -webkit-background-size: cover;
             background-size: cover;
-    -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-            transform: translateY(50%);
-    height: 170vh;
+    height: 1500px;
+    position: relative;
+    top: 95%;
   }
 
   .features-more__item {
@@ -7750,6 +7740,10 @@ p {
     transition: all .5s ease .5s;
   }
 
+  .reviews__read-more {
+    margin-left: 5px;
+  }
+
   .dilers {
     padding-top: 80px;
     padding-bottom: 95px;
@@ -7799,22 +7793,6 @@ p {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
-  }
-}
-
-@media (min-width: 1500px) {
-  .features-more__bg-image {
-    -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-            transform: translateY(50%);
-    height: 185vh;
-  }
-}
-
-@media (min-width: 1800px) {
-  .promo__hand img {
-    -o-object-position: -220% 0;
-       object-position: -220% 0;
   }
 }
 

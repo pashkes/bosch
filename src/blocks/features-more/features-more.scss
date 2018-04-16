@@ -36,14 +36,11 @@
 			transform: none;
 		}
 		@media(min-width: $screen-xl) {
-			background-position-x: center;
+			background-position: center top;
 			background-size: cover;
-			transform: translateY(50%);
-			height: 170vh;
-		}
-		@media(min-width: 1500px) {
-			transform: translateY(50%);
-			height: 185vh;
+			height: 1500px;
+			position: relative;
+			top: 95%;
 		}
 	}
 	&__list {
