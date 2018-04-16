@@ -7322,11 +7322,9 @@ p {
     -webkit-transform: translateY(-30px);
         -ms-transform: translateY(-30px);
             transform: translateY(-30px);
-    -webkit-transition: opacity .6s ease-out, -webkit-transform .6s ease-out;
-    transition: opacity .6s ease-out, -webkit-transform .6s ease-out;
-    -o-transition: transform .6s ease-out, opacity .6s ease-out;
-    transition: transform .6s ease-out, opacity .6s ease-out;
-    transition: transform .6s ease-out, opacity .6s ease-out, -webkit-transform .6s ease-out;
+    -webkit-transition: all .6s ease-out;
+    -o-transition: all .6s ease-out;
+    transition: all .6s ease-out;
   }
 
   .promo__psevdo-logo {
@@ -7371,11 +7369,9 @@ p {
     -webkit-transform: translateY(-40px);
         -ms-transform: translateY(-40px);
             transform: translateY(-40px);
-    -webkit-transition: -webkit-transform .4s .4s;
-    transition: -webkit-transform .4s .4s;
-    -o-transition: transform .4s .4s;
-    transition: transform .4s .4s;
-    transition: transform .4s .4s, -webkit-transform .4s .4s;
+    -webkit-transition: all .4s .4s;
+    -o-transition: all .4s .4s;
+    transition: all .4s .4s;
   }
 
   .features__subtitle {
