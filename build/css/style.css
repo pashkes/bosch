@@ -381,6 +381,7 @@ template {
   src: local("Bosch Sans Regular"), local("BoschSans-Regular"), url("../fonts/boschSans/BoschSans-Regular.woff2") format("woff2"), url("../fonts/boschSans/BoschSans-Regular.woff") format("woff"), url("../fonts/boschSans/BoschSans-Regular.svg#BoschSans-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -388,6 +389,7 @@ template {
   src: local("Bosch Sans Light"), local("BoschSans-Light"), url("../fonts/boschSans/BoschSans-Light.woff2") format("woff2"), url("../fonts/boschSans/BoschSans-Light.woff") format("woff"), url("../fonts/boschSans/BoschSans-Light.svg#BoschSans-Light") format("svg");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -395,6 +397,7 @@ template {
   src: local("Bosch Sans Medium"), local("BoschSans-Medium"), url("../fonts/boschSans/BoschSans-Medium.woff2") format("woff2"), url("../fonts/boschSans/BoschSans-Medium.woff") format("woff"), url("../fonts/boschSans/BoschSans-Medium.svg#BoschSans-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -402,6 +405,7 @@ template {
   src: local("Bosch Sans Bold"), local("BoschSans-Bold"), url("../fonts/boschSans/BoschSans-Bold.woff2") format("woff2"), url("../fonts/boschSans/BoschSans-Bold.woff") format("woff"), url("../fonts/boschSans/BoschSans-Bold.svg#BoschSans-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @-ms-viewport {
