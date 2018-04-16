@@ -389,7 +389,6 @@ template {
   src: local("Bosch Sans Light"), local("BoschSans-Light"), url("../fonts/boschSans/BoschSans-Light.woff2") format("woff2"), url("../fonts/boschSans/BoschSans-Light.woff") format("woff"), url("../fonts/boschSans/BoschSans-Light.svg#BoschSans-Light") format("svg");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
