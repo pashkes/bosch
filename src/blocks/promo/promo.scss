@@ -142,7 +142,7 @@
 		@media(min-width: $screen-xl) {
 			opacity: 0;
 			transform: translateY(-30px);
-			transition: all .6s ease-out;
+			transition: transform .6s ease-out, opacity .6s ease-out;
 		}
 	}
 

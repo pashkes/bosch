@@ -7319,9 +7319,11 @@ p {
     -webkit-transform: translateY(-30px);
         -ms-transform: translateY(-30px);
             transform: translateY(-30px);
-    -webkit-transition: all .6s ease-out;
-    -o-transition: all .6s ease-out;
-    transition: all .6s ease-out;
+    -webkit-transition: opacity .6s ease-out, -webkit-transform .6s ease-out;
+    transition: opacity .6s ease-out, -webkit-transform .6s ease-out;
+    -o-transition: transform .6s ease-out, opacity .6s ease-out;
+    transition: transform .6s ease-out, opacity .6s ease-out;
+    transition: transform .6s ease-out, opacity .6s ease-out, -webkit-transform .6s ease-out;
   }
 
   .promo__psevdo-logo {
