@@ -3163,7 +3163,7 @@ p {
   left: 0;
   right: 0;
   top: 0;
-  background: url(../../img/gradient.png) left center no-repeat;
+  background: url(../img/gradient.png) left center no-repeat;
   -webkit-background-size: 100% 16px;
           background-size: 100% 16px;
 }
