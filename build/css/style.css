@@ -2072,7 +2072,8 @@ p {
   background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
   background-image: -ms-radial-gradient(50% 50%, circle closest-side, #0f5a8d 30%, #0a3959 100%);
   overflow: hidden;
-  min-height: 100vh;
+  min-height: -webkit-calc(100vh - 30px - 24px);
+  min-height: calc(100vh - 30px - 24px);
 }
 
 .promo::after {
@@ -5092,6 +5093,8 @@ p {
 
   .promo {
     padding-bottom: 111px;
+    min-height: -webkit-calc(100vh - 30px - 111px);
+    min-height: calc(100vh - 30px - 111px);
   }
 
   .promo__header .yandex-btn svg {
@@ -7305,6 +7308,7 @@ p {
 
   .promo {
     padding-bottom: 94px;
+    min-height: 100vh;
   }
 
   .promo__logo {

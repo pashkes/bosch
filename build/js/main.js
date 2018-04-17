@@ -1,9 +1,3 @@
-
-// .about-company scripts goes here 
-
-/*$(function() {
-	
-});*/
 (function () {
 	$('.js-demo-slider').slick({
 		arrows: false,
@@ -26,6 +20,13 @@
 			}]
 	});
 })();
+// .about-company scripts goes here 
+
+/*$(function() {
+	
+});*/
+
+
 $(function () {
 	$('.js-dilers-slider').slick({
 		mobileFirst: true,
@@ -50,7 +51,6 @@ $(function () {
 		]
 	});
 });
-
 // .features-nore scripts goes here 
 
 /*$(function() {
