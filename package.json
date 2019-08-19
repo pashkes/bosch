@@ -1,11 +1,13 @@
 {
-  "name": "rentride",
+  "name": "bosch",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +16,7 @@
     "colors": "^1.1.2",
     "del": "^3.0.0",
     "fs": "0.0.1-security",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "4.0",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-clean": "^0.3.2",
     "gulp-cli": "^2.0.1",
@@ -45,6 +47,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "gh-pages": "^2.1.1",
     "git": "^0.1.5",
     "gulp-compress": "0.0.9",
     "imagemin-webp": "^4.1.0",
